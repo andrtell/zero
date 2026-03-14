@@ -1,1 +1,1 @@
-require('zero').load('light')
+require('zero').load('zero-light')
