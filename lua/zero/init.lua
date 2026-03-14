@@ -17,47 +17,63 @@ do
   }
 
   local hi = {
-    Normal    = { fg = co.black[1],
-                  bg = co.white[1]  },
-    Status    = { bg = co.grey[2]   },
-    Visual    = { bg = co.grey[3]   },
-    Search    = { bg = co.grey[4],  },
-    Keyword   = { fg = co.red[1]    },
-    Number    = { fg = co.blue[1]   },
-    String    = { fg = co.green[1]  },
-    Boolean   = { fg = co.purple[1] },
-    Comment   = { fg = co.grey[1]   },
-    Invisible = { fg = co.white[1]  },
-    Directory = { fg = co.blue[1]   },
-    Error     = { fg = co.red[1]    },
-    Warn      = { fg = co.purple[1] },
-    Hint      = { fg = co.blue[1]   },
-    Title     = { fg = co.blue[1]   },
+    Normal      = { fg = co.black[1],
+                    bg = co.white[1]  },
+    Invisible   = { fg = co.white[1]  },
+
+    Visual      = { bg = co.grey[3]   },
+    Search      = { bg = co.grey[4],  },
+
+    MenuSelect  = { bg = co.grey[2]   },
+    ScrollBar   = { bg = co.grey[4]   },
+
+    Status      = { bg = co.grey[2]   },
+
+    Directory   = { fg = co.blue[1]   },
+
+    Title       = { fg = co.blue[1]   },
+
+    Error       = { fg = co.red[1]    },
+    Warn        = { fg = co.purple[1] },
+    Hint        = { fg = co.blue[1]   },
+
+    Keyword     = { fg = co.red[1]    },
+    Number      = { fg = co.blue[1]   },
+    String      = { fg = co.green[1]  },
+    Boolean     = { fg = co.purple[1] },
+    Comment     = { fg = co.grey[1]   },
   }
 
   light = {
-    hi.Normal,    'Normal',
-    hi.Status,    'StatusLine',
-                  'PMenuSelect',
-                  'BlinkCmpMenuSelection',
-    hi.Visual,    'Visual',
-    hi.Search,    'Search',
-                  'CurSearch',
-                  'IncSearch',
-                  'BlinkCmpScrollBarThumb',
-    hi.Comment,   'Comment',
-    hi.Invisible, 'NonText',
-    hi.Boolean,   'Boolean',
-    hi.Number,    'Number', 'Float',
-    hi.String,    'String',
-    hi.Keyword,   'Keyword', 'Statement', '@keyword.function',
-                  '@keyword.repeat', '@keyword.conditional',
-                  '@keyword.type',
-    hi.Hint,      'DiagnosticHint',
-    hi.Warn,      'DiagnosticWarn',
-    hi.Error,     'DiagnosticError',
-    hi.Directory, 'Directory',
-    hi.Title,     'Title',
+    hi.Normal,      'Normal',
+    hi.Invisible,   'NonText',
+
+    hi.Visual,      'Visual',
+    hi.Search,      'Search',
+                    'CurSearch',
+                    'IncSearch',
+
+    hi.Status,      'StatusLine',
+
+    hi.MenuSelect,  'PMenuSelect',
+                    'BlinkCmpMenuSelection',
+    hi.ScrollBar,   'BlinkCmpScrollBarThumb',
+
+    hi.Directory,   'Directory',
+
+    hi.Title,       'Title',
+
+    hi.Hint,        'DiagnosticHint',
+    hi.Warn,        'DiagnosticWarn',
+    hi.Error,       'DiagnosticError',
+
+    hi.Comment,     'Comment',
+    hi.Boolean,     'Boolean',
+    hi.Number,      'Number', 'Float',
+    hi.String,      'String',
+    hi.Keyword,     'Keyword', 'Statement', '@keyword.function',
+                    '@keyword.repeat', '@keyword.conditional',
+                    '@keyword.type',
   }
 end
 
@@ -68,6 +84,7 @@ local themes = {
 
 function M.reset_colors()
   vim.cmd('hi clear')
+
   if 1 == vim.fn.exists('syntax_on') then
     vim.cmd('syntax reset')
   end
@@ -85,6 +102,7 @@ end
 
 function M.apply_colors(theme)
   local vals = {}
+
   for _, group in ipairs(theme) do
     if "table" == type(group) then
       vals = group
@@ -97,8 +115,11 @@ end
 function M.load(name)
   M.reset_colors()
   M.clear_colors()
+
   local theme = themes[name] or themes['zero-light']
+
   vim.g.colors_name = theme[1]
+
   M.apply_colors(theme[2])
 end
 
