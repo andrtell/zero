@@ -1,6 +1,6 @@
 local M = {}
 
-local light
+local light = {}
 
 do
   local co = {
@@ -61,6 +61,11 @@ do
   }
 end
 
+local themes = {
+  ['zero-light'] = {'zero-light', light},
+  ['zero-dark']  = {'zero-dark',  light},
+}
+
 function M.reset_colors()
   vim.cmd('hi clear')
   if 1 == vim.fn.exists('syntax_on') then
@@ -78,9 +83,8 @@ function M.clear_colors()
   end
 end
 
-function M.set_colors(theme)
+function M.apply_colors(theme)
   local vals = {}
-
   for _, group in ipairs(theme) do
     if "table" == type(group) then
       vals = group
@@ -90,16 +94,12 @@ function M.set_colors(theme)
   end
 end
 
-function M.load(pick)
+function M.load(name)
   M.reset_colors()
   M.clear_colors()
-  local themes = {
-    ['light'] = light
-  }
-  pick = pick or 'light'
-  M.set_colors(themes[pick])
+  local theme = themes[name] or themes['zero-light']
+  vim.g.colors_name = theme[1]
+  M.apply_colors(theme[2])
 end
-
-M.load()
 
 return M
