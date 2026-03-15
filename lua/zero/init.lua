@@ -53,6 +53,4 @@ function M.load(name)
   M.apply_colors(vals)
 end
 
-M.load()
-
 return M
