@@ -12,7 +12,7 @@ do
                '#e7e6e4',
                '#e5e5e5', },
     red    = { '#7e1e00'  },
-    green  = { '#025504',
+    green  = { '#025603',
                '#025002'  },
     blue   = { '#05349c'  },
     purple = { '#6b0c6b'  },
@@ -128,7 +128,5 @@ function M.load(name)
   vim.g.colors_name = theme[1]
   M.apply_colors(theme[2])
 end
-
-M.load()
 
 return M
