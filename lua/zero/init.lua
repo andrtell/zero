@@ -1,94 +1,12 @@
 local M = {}
 
-local light = {}
-
-do
-  local co = {
-    white  = { '#f9f9f9'  },
-    black  = { '#000000'  },
-    grey   = { '#98989a',
-               '#e5e4e2',
-               '#ededec',
-               '#e7e6e4',
-               '#e5e5e5', },
-    red    = { '#7e1e00'  },
-    green  = { '#025603',
-               '#025002'  },
-    blue   = { '#05349c'  },
-    purple = { '#6b0c6b'  },
-  }
-
-  local hi = {
-    Normal      = { fg = co.black[1],
-                    bg = co.white[1]  },
-    Invisible   = { fg = co.white[1]  },
-
-    Visual      = { bg = co.grey[3]   },
-    Search      = { bg = co.grey[4],  },
-
-    MenuSelect  = { bg = co.grey[2]   },
-    ScrollBar   = { bg = co.grey[4]   },
-
-    Status      = { bg = co.grey[2]   },
-
-    Directory   = { fg = co.blue[1]   },
-
-    Title       = { fg = co.blue[1]   },
-
-    Error       = { fg = co.red[1]    },
-    Warn        = { fg = co.purple[1] },
-    Hint        = { fg = co.blue[1]   },
-
-    Keyword     = { fg = co.red[1]    },
-    Number      = { fg = co.blue[1]   },
-    String      = { fg = co.green[1]  },
-    Boolean     = { fg = co.purple[1] },
-    Comment     = { fg = co.grey[1]   },
-
-    Type        = { fg = co.green[2]  },
-  }
-
-  light = {
-    hi.Normal,      'Normal',
-    hi.Invisible,   'NonText',
-
-    hi.Visual,      'Visual',
-                    'LeapLabel',
-    hi.Search,      'Search',
-                    'CurSearch',
-                    'IncSearch',
-
-    hi.Status,      'StatusLine',
-
-    hi.MenuSelect,  'PMenuSelect',
-                    'BlinkCmpMenuSelection',
-    hi.ScrollBar,   'BlinkCmpScrollBarThumb',
-
-    hi.Directory,   'Directory',
-
-    hi.Title,       'Title',
-
-    hi.Hint,        'DiagnosticHint',
-    hi.Warn,        'DiagnosticWarn',
-    hi.Error,       'DiagnosticError',
-
-    hi.Comment,     'Comment',
-    hi.Boolean,     'Boolean',
-    hi.Number,      'Number', 'Float',
-    hi.String,      'String',
-    hi.Keyword,     'Keyword', 'Statement', '@keyword.function',
-                    '@keyword.repeat', '@keyword.conditional',
-                    '@keyword.type',
-
-    -- PONY
-    hi.Type,        '@type.pony',
-    hi.Number,      '@string.pony',
-  }
-end
+local default = 'zero-light'
 
 local themes = {
-  ['zero-light'] = {'zero-light', light},
-  ['zero-dark']  = {'zero-dark',  light},
+  ['zero-light'] = {
+    name = 'zero-light',
+    path = 'zero.themes.zero-light'
+  }
 }
 
 function M.reset_colors()
@@ -109,6 +27,11 @@ function M.clear_colors()
   end
 end
 
+function M.force_require(path)
+  package.loaded[path] = nil
+  return require(path)
+end
+
 function M.apply_colors(theme)
   local vals = {}
 
@@ -124,9 +47,12 @@ end
 function M.load(name)
   M.reset_colors()
   M.clear_colors()
-  local theme = themes[name] or themes['zero-light']
-  vim.g.colors_name = theme[1]
-  M.apply_colors(theme[2])
+  local theme = themes[name] or themes[default]
+  vim.g.colors_name = theme.name
+  local vals = M.force_require(theme.path)
+  M.apply_colors(vals)
 end
+
+M.load()
 
 return M
