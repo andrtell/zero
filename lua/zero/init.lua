@@ -5,7 +5,7 @@ M.load = function (name)
   -- name is valid?
 
   local ok = {
-    ['zero-light'] = true
+    ['rgb-light'] = true
   }
 
   if not ok[name] then
@@ -35,17 +35,17 @@ M.load = function (name)
 
   -- set the colorscheme name
 
-  vim.g.colors_name = name
+  vim.g.colors_name = 'zero-' .. name
 
   -- (re)load theme from file
 
-  local path = string.format('zero.themes.%s', name)
+  local path = 'zero.themes.' .. name
 
   package.loaded[path] = nil
 
   local theme = require(path)
 
-  -- set theme highlights
+  -- set highlights from theme
 
   local opts = {}
 
@@ -57,5 +57,7 @@ M.load = function (name)
     end
   end
 end
+
+M.load('rgb-light')
 
 return M
