@@ -1,3 +1,5 @@
+--/ COLORS /--
+
 local black   =   '#000000'
 local white   =   '#fafafa'
 local red     =   '#7e1e00'
@@ -8,6 +10,8 @@ local gray    = { comment = '#98989a',
                   status  = '#e5e4e2',
                   search  = '#e7e6e4',
                   visual  = '#ededec' }
+
+--/ OPTS /--
 
 local Normal      = { fg = black,
                       bg = white        }
@@ -27,6 +31,8 @@ local Number      = { fg = blue         }
 local String      = { fg = green        }
 local Boolean     = { fg = purple       }
 local Comment     = { fg = gray.comment }
+
+--/ THEME /--
 
 return {
   Normal,     'Normal',
@@ -53,4 +59,3 @@ return {
               '@keyword.repeat', '@keyword.conditional',
               '@keyword.type',
 }
-

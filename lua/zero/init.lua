@@ -1,6 +1,9 @@
 local M = {}
 
 M.load = function (name)
+
+  -- name is valid?
+
   local ok = {
     ['zero-light'] = true
   }
@@ -9,11 +12,15 @@ M.load = function (name)
     return
   end
 
+  -- reset highlights to the default
+
   vim.cmd('hi clear')
 
   if 1 == vim.fn.exists('syntax_on') then
     vim.cmd('syntax reset')
   end
+
+  -- clear all highlights, preserve links and underlines
 
   local hls = vim.api.nvim_get_hl(0, {})
 
@@ -26,13 +33,19 @@ M.load = function (name)
     )
   end
 
+  -- set the colorscheme name
+
   vim.g.colors_name = name
+
+  -- (re)load theme from file
 
   local path = string.format('zero.themes.%s', name)
 
   package.loaded[path] = nil
 
   local theme = require(path)
+
+  -- set theme highlights
 
   local opts = {}
 
