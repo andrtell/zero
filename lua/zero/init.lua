@@ -1,56 +1,48 @@
 local M = {}
 
-local default = 'zero-light'
-
-local themes = {
-  ['zero-light'] = {
-    name = 'zero-light',
-    path = 'zero.themes.zero-light'
+M.load = function (name)
+  local ok = {
+    ['zero-light'] = true
   }
-}
 
-function M.reset_colors()
+  if not ok[name] then
+    return
+  end
+
   vim.cmd('hi clear')
 
   if 1 == vim.fn.exists('syntax_on') then
     vim.cmd('syntax reset')
   end
-end
 
-function M.clear_colors()
-  local hi = vim.api.nvim_get_hl(0, {})
+  local hls = vim.api.nvim_get_hl(0, {})
 
-  for group, val in pairs(hi) do
+  for group, val in pairs(hls) do
     vim.api.nvim_set_hl(
-      0, group, { link = val.link, underline = val.underline }
+      0, group, {
+        link = val.link,
+        underline = val.underline
+      }
     )
   end
-end
 
-function M.force_require(path)
+  vim.g.colors_name = name
+
+  local path = string.format('zero.themes.%s', name)
+
   package.loaded[path] = nil
-  return require(path)
-end
 
-function M.apply_colors(theme)
-  local vals = {}
+  local theme = require(path)
+
+  local opts = {}
 
   for _, group in ipairs(theme) do
     if "table" == type(group) then
-      vals = group
+      opts = group
     else
-      vim.api.nvim_set_hl(0, group, vals)
+      vim.api.nvim_set_hl(0, group, opts)
     end
   end
-end
-
-function M.load(name)
-  M.reset_colors()
-  M.clear_colors()
-  local theme = themes[name] or themes[default]
-  vim.g.colors_name = theme.name
-  local vals = M.force_require(theme.path)
-  M.apply_colors(vals)
 end
 
 return M
