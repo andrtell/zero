@@ -8,12 +8,14 @@ do
     black  = { '#000000'  },
     grey   = { '#98989a',
                '#e5e4e2',
-               '#ededea',
-               '#e7e6e4', },
+               '#ededec',
+               '#e7e6e4',
+               '#e5e5e5', },
     red    = { '#7e1e00'  },
-    green  = { '#025604'  },
-    blue   = { '#04359b'  },
-    purple = { '#6c0d6c'  },
+    green  = { '#025504',
+               '#025002'  },
+    blue   = { '#05349c'  },
+    purple = { '#6b0c6b'  },
   }
 
   local hi = {
@@ -42,6 +44,8 @@ do
     String      = { fg = co.green[1]  },
     Boolean     = { fg = co.purple[1] },
     Comment     = { fg = co.grey[1]   },
+
+    Type        = { fg = co.green[2]  },
   }
 
   light = {
@@ -49,6 +53,7 @@ do
     hi.Invisible,   'NonText',
 
     hi.Visual,      'Visual',
+                    'LeapLabel',
     hi.Search,      'Search',
                     'CurSearch',
                     'IncSearch',
@@ -74,6 +79,10 @@ do
     hi.Keyword,     'Keyword', 'Statement', '@keyword.function',
                     '@keyword.repeat', '@keyword.conditional',
                     '@keyword.type',
+
+    -- PONY
+    hi.Type,        '@type.pony',
+    hi.Number,      '@string.pony',
   }
 end
 
@@ -115,12 +124,11 @@ end
 function M.load(name)
   M.reset_colors()
   M.clear_colors()
-
   local theme = themes[name] or themes['zero-light']
-
   vim.g.colors_name = theme[1]
-
   M.apply_colors(theme[2])
 end
+
+M.load()
 
 return M
