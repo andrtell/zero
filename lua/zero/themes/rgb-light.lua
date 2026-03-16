@@ -9,10 +9,9 @@ local green   =   '#045404'
 local blue    =   '#034792'
 local purple  =   '#6a156a'
 local gray    = { comment = '#979797',
-                  status  = '#e5e4e2',
-                  search  = '#e7e6e4',
-                  visual  = '#ededec',
-                  dartc   = '#69717e'}
+                  visual  = '#ecedee',
+                  search  = '#ededd9',
+                  status  = '#eaebec', }
 
 --/ OPTS /--
 
