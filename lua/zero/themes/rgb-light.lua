@@ -3,7 +3,7 @@
 --/ COLORS /--
 
 local black   =   '#010101'
-local white   =   '#f9f9f9'
+local white   =   '#fafafa'
 local red     =   '#7c1f00'
 local green   =   '#035405'
 local blue    =   '#034792'
