@@ -4,9 +4,9 @@
 
 local black   =   '#010101'
 local white   =   '#f9f9f9'
-local red     =   '#7d2000'
-local green   =   '#055605'
-local blue    =   '#024493'
+local red     =   '#7d1f00'
+local green   =   '#045405'
+local blue    =   '#034792'
 local purple  =   '#6b136b'
 local gray    = { comment = '#98989a',
                   status  = '#e5e4e2',
