@@ -1,11 +1,13 @@
+--// RGB Light //--
+
 --/ COLORS /--
 
-local black   =   '#000000'
-local white   =   '#fafafa'
-local red     =   '#7e1e00'
-local green   =   '#025603'
-local blue    =   '#05349c'
-local purple  =   '#6b0c6b'
+local black   =   '#010101'
+local white   =   '#f9f9f9'
+local red     =   '#7d2102'
+local green   =   '#055605'
+local blue    =   '#024493'
+local purple  =   '#6b136b'
 local gray    = { comment = '#98989a',
                   status  = '#e5e4e2',
                   search  = '#e7e6e4',
@@ -31,6 +33,7 @@ local Number      = { fg = blue         }
 local String      = { fg = green        }
 local Boolean     = { fg = purple       }
 local Comment     = { fg = gray.comment }
+local Type        = { fg = blue         }
 
 --/ THEME /--
 
@@ -55,7 +58,8 @@ return {
   Boolean,    'Boolean',
   Number,     'Number', 'Float',
   String,     'String',
+  Type,       'Type',
   Keyword,    'Keyword', 'Statement', '@keyword.function',
               '@keyword.repeat', '@keyword.conditional',
-              '@keyword.type',
+              '@keyword.type', '@operator.dart',
 }

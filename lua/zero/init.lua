@@ -5,7 +5,8 @@ M.load = function (name)
   -- name is valid?
 
   local ok = {
-    ['rgb-light'] = true
+    ['rgb-light']  = true,
+    ['dart-light'] = true
   }
 
   if not ok[name] then
@@ -58,6 +59,6 @@ M.load = function (name)
   end
 end
 
-M.load('rgb-light')
+-- M.load('rgb-light')
 
 return M

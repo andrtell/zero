@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-nvim --cmd "set rtp+=$(pwd)/"
+nvim --cmd "set rtp^=$(pwd)"
