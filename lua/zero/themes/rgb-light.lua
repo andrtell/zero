@@ -61,5 +61,5 @@ return {
   Type,       'Type',
   Keyword,    'Keyword', 'Statement', '@keyword.function',
               '@keyword.repeat', '@keyword.conditional',
-              '@keyword.type', '@operator.dart',
+              '@keyword.type',
 }
