@@ -4,14 +4,15 @@
 
 local black   =   '#010101'
 local white   =   '#f9f9f9'
-local red     =   '#7d1f00'
-local green   =   '#045405'
+local red     =   '#7c1f00'
+local green   =   '#035405'
 local blue    =   '#034792'
-local purple  =   '#6b136b'
-local gray    = { comment = '#98989a',
+local purple  =   '#6a156a'
+local gray    = { comment = '#979797',
                   status  = '#e5e4e2',
                   search  = '#e7e6e4',
-                  visual  = '#ededec' }
+                  visual  = '#ededec',
+                  dartc   = '#69717e'}
 
 --/ OPTS /--
 
