@@ -4,7 +4,7 @@
 
 local black   =   '#010101'
 local white   =   '#f9f9f9'
-local red     =   '#7d2102'
+local red     =   '#7d2000'
 local green   =   '#055605'
 local blue    =   '#024493'
 local purple  =   '#6b136b'
