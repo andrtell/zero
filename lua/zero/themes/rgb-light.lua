@@ -9,7 +9,7 @@ local green   =   '#045404'
 local blue    =   '#034792'
 local purple  =   '#6a156a'
 local gray    = { comment = '#979797',
-                  visual  = '#ecedee',
+                  visual  = '#eceeee',
                   search  = '#ededd9',
                   status  = '#eaebec', }
 
