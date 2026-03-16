@@ -5,7 +5,7 @@
 local black   =   '#010101'
 local white   =   '#fafafa'
 local red     =   '#7c1f00'
-local green   =   '#035405'
+local green   =   '#045404'
 local blue    =   '#034792'
 local purple  =   '#6a156a'
 local gray    = { comment = '#979797',
