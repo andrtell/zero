@@ -2,18 +2,17 @@ local M = {}
 
 M.load = function (name)
 
-  -- name is valid?
+  -- is name ok?
 
   local ok = {
-    ['rgb-light']  = true,
-    ['dart-light'] = true
+    ['light']  = true,
   }
 
   if not ok[name] then
     return
   end
 
-  -- reset highlights to the default
+  -- reset to default highlights
 
   vim.cmd('hi clear')
 
@@ -59,6 +58,6 @@ M.load = function (name)
   end
 end
 
--- M.load('rgb-light')
+-- M.load('light')
 
 return M
