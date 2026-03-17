@@ -10,7 +10,7 @@ local yellow  = { bg = '#ededd9'  }
 local gray    = { fg = '#969696',
                   bg = '#eceeee', }
 
--- Highlights
+-- Opts
 
 local Normal  = { fg = black.fg,
                   bg = white.bg   }
