@@ -3,7 +3,7 @@
 local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
 local red     = { fg = '#892e2d'  }
-local green   = { fg = '#045504'  }
+local green   = { fg = '#055605'  }
 local blue    = { fg = '#014395'  }
 local purple  = { fg = '#6e2275'  }
 local yellow  = { bg = '#ededd9'  }
