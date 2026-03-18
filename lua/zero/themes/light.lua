@@ -1,7 +1,7 @@
 -- Colors
 
 local black   = { fg = '#020303'  }
-local white   = { bg = '#f9f9fa'  }
+local white   = { bg = '#fafafa'  }
 local red     = { fg = '#791e01'  }
 local green   = { fg = '#045504'  }
 local blue    = { fg = '#014495'  }
