@@ -1,11 +1,11 @@
 -- Colors
 
-local black   = { fg = '#020202'  }
+local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
-local red     = { fg = '#791e01'  }
+local red     = { fg = '#78200f'  }
 local green   = { fg = '#045504'  }
 local blue    = { fg = '#014495'  }
-local purple  = { fg = '#6d2275'  }
+local purple  = { fg = '#6e2275'  }
 local yellow  = { bg = '#ededd9'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
@@ -53,7 +53,7 @@ return {
               '@keyword.conditional',
               '@keyword.type',
   Green,      'String',
-  Purple,        'Number',
+  Red,        'Number',
               'Float',
               -- 'Type',
   Blue,       'Boolean',
