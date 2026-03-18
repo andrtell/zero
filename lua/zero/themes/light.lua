@@ -1,10 +1,10 @@
 -- Colors
 
 local black   = { fg = '#030303'  }
-local white   = { bg = '#f9f9f9'  }
+local white   = { bg = '#fafafa'  }
 local red     = { fg = '#7c1e02'  }
 local green   = { fg = '#035404'  }
-local blue    = { fg = '#024394'  }
+local blue    = { fg = '#014394'  }
 local purple  = { fg = '#6a176a'  }
 local yellow  = { bg = '#ededd9'  }
 local gray    = { fg = '#969696',
