@@ -1,13 +1,13 @@
 -- Colors
 
-local black   = { fg = '#030303'  }
-local white   = { bg = '#fafafa'  }
-local red     = { fg = '#7c1e02'  }
-local green   = { fg = '#035404'  }
-local blue    = { fg = '#014394'  }
-local purple  = { fg = '#6a176a'  }
+local black   = { fg = '#020303'  }
+local white   = { bg = '#f9f9fa'  }
+local red     = { fg = '#791e01'  }
+local green   = { fg = '#045504'  }
+local blue    = { fg = '#014495'  }
+local purple  = { fg = '#6d2376'  }
 local yellow  = { bg = '#ededd9'  }
-local gray    = { fg = '#969696',
+local gray    = { fg = '#959595',
                   bg = '#edefef', }
 
 -- Opts
@@ -44,17 +44,17 @@ return {
   Blue,       'DiagnosticHint',
   Purple,     'DiagnosticWarn',
               -- Syntax
-  Red,        'Keyword',
+  Blue,       'Keyword',
               'Statement',
               '@keyword.function',
               '@keyword.repeat',
               '@keyword.conditional',
               '@keyword.type',
   Green,      'String',
-  Blue,       'Number',
+  Purple,        'Number',
               'Float',
               -- 'Type',
-  Purple,     'Boolean',
+  Blue,       'Boolean',
   Gray,       'Comment',
               -- Blink
   Visual,     'BlinkCmpMenuSelection',
