@@ -5,10 +5,12 @@ local white   = { bg = '#fafafa'  }
 local red     = { fg = '#791e01'  }
 local green   = { fg = '#045504'  }
 local blue    = { fg = '#014495'  }
-local purple  = { fg = '#6d2376'  }
+local purple  = { fg = '#6d2275'  }
 local yellow  = { bg = '#ededd9'  }
 local gray    = { fg = '#959595',
-                  bg = '#edefef', }
+                  bg = '#edefef',
+                  cg = '#dddfdf',
+                }
 
 -- Opts
 
@@ -22,7 +24,7 @@ local Green   = { fg = green.fg   }
 local Blue    = { fg = blue.fg    }
 local Purple  = { fg = purple.fg  }
 local Gray    = { fg = gray.fg    }
-local IGray   = { fg = gray.bg    }
+local IGray   = { fg = gray.cg    }
 
 -- Theme
 
