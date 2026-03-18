@@ -51,7 +51,7 @@ return {
   Green,      'String',
   Blue,       'Number',
               'Float',
-              'Type',
+              -- 'Type',
   Purple,     'Boolean',
   Gray,       'Comment',
               -- Blink
