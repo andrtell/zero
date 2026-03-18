@@ -5,7 +5,8 @@ M.load = function (name)
   -- is name ok?
 
   local ok = {
-    ['light']  = true,
+    ['light'] = true,
+    -- ['dark']  = true,
   }
 
   if not ok[name] then
