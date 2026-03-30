@@ -69,4 +69,6 @@ return {
   Green,      '@tag.javascript',
               -- HTML
   Normal,     'HtmlTitle',
+              -- HEEX (Elixir)
+  Blue,       '@tag.heex',
 }
