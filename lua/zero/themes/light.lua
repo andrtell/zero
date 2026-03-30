@@ -6,7 +6,7 @@ local red     = { fg = '#8a2d2d'  }
 local green   = { fg = '#055705'  }
 local blue    = { fg = '#014395'  }
 local purple  = { fg = '#6e2275'  }
-local yellow  = { bg = '#ededd9'  }
+local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
                   cg = '#dddfdf',
@@ -67,4 +67,6 @@ return {
   Blue,       '@lsp.type.class.dart',
               -- JS
   Green,      '@tag.javascript',
+              -- HTML
+  Normal,     'HtmlTitle',
 }
