@@ -59,6 +59,6 @@ M.load = function (name)
   end
 end
 
-M.load('light')
+-- M.load('light')
 
 return M

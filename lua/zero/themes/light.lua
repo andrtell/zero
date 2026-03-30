@@ -2,9 +2,9 @@
 
 local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
-local red     = { fg = '#8a2d2d'  }
+local red     = { fg = '#892d2d'  }
 local green   = { fg = '#055705'  }
-local blue    = { fg = '#014395'  }
+local blue    = { fg = '#014394'  }
 local purple  = { fg = '#6e2275'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
@@ -71,4 +71,8 @@ return {
   Normal,     'HtmlTitle',
               -- HEEX (Elixir)
   Blue,       '@tag.heex',
+              '@constant.elixir',
+              '@string.special.symbol.elixir',
+  Red,        '@keyword.elixir',
+  Purple,     '@boolean.elixir',
 }
