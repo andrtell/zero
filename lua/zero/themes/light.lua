@@ -82,8 +82,8 @@ return {
               -- Tyepscript
   Purple,     '@boolean.typescript',
               -- TSX
-  Blue,       'tsxTag',
+  Blue,       '@tag.delimiter.tsx',
+  Normal,     'tsxTag',
               'tsxCloseTag',
-              '@tag.delimiter.tsx',
-  Normal,     '@markup.heading.1.tsx',
+              '@markup.heading.1.tsx',
 }
