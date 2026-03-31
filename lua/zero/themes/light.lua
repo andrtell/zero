@@ -4,7 +4,7 @@ local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
 local red     = { fg = '#8c2c2c'  }
 local green   = { fg = '#055705'  }
-local blue    = { fg = '#003c94'  }
+local blue    = { fg = '#013c94'  }
 local purple  = { fg = '#6e2176'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
@@ -72,6 +72,8 @@ local theme = {
   Green,      '@tag.javascript',
               -- HTML
   Blue,       '@tag.html',
+              '@tag.delimiter.html',
+  Gray,       '@constant.html',
   Normal,     'HtmlTitle',
               '@markup.heading.html',
               -- HEEX (Elixir)
@@ -87,7 +89,7 @@ local theme = {
               '@function.method.call.tsx',
   Blue,       '@keyword.return.tsx',
   Blue,       '@tag.builtin.tsx',
-  -- Purple,     '@tag.attribute.tsx',
+              '@tag.delimiter.tsx',
   Normal,     '@markup.heading.1.tsx',
               -- CSS
   Blue,       '@tag.css',
