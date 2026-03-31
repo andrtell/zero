@@ -89,7 +89,7 @@ local theme = {
               '@function.call.tsx',
               '@function.method.call.tsx',
   -- Blue,       '@keyword.return.tsx',
-  Red,        '@operator.tsx',
+  Normal,     '@operator.tsx',
               '@operator.typescript',
   Blue,       '@tag.builtin.tsx',
               '@tag.delimiter.tsx',
