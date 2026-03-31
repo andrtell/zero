@@ -81,7 +81,7 @@ local theme = {
   Red,        '@keyword.elixir',
   Purple,     '@boolean.elixir',
               -- Tyepscript
-  Red,        '@function.call.typescript',
+  Normal,     '@function.call.typescript',
               '@function.method.call.typescript',
               '@function.call.tsx',
               '@function.method.call.tsx',
