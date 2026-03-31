@@ -29,6 +29,10 @@ local IGray   = { fg = gray.cg    }
 -- Theme
 
 return {
+  Red,        'Red',
+  Green,      'Green',
+  Blue,       'Blue',
+  Purple,     'Purple',
   Normal,     'Normal',
               'Delimiter',
   NonText,    'NonText',
