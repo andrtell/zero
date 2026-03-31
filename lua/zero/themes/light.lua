@@ -83,6 +83,7 @@ return {
   Purple,     '@boolean.typescript',
               -- TSX
   Blue,       '@tag.delimiter.tsx',
+              'tsxIntrinsicTagName',
   Normal,     'tsxTag',
               'tsxCloseTag',
               '@markup.heading.1.tsx',
