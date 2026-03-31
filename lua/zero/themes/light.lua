@@ -87,7 +87,7 @@ local theme = {
               '@function.method.call.tsx',
   Red,        '@keyword.return.tsx',
   Blue,       '@tag.builtin.tsx',
-  Purple,     '@tag.attribute.tsx',
+  -- Purple,     '@tag.attribute.tsx',
   Normal,     '@markup.heading.1.tsx',
               -- CSS
   Blue,       '@tag.css',
