@@ -73,7 +73,7 @@ local theme = {
               -- HTML
   Blue,       '@tag.html',
               '@tag.delimiter.html',
-  Purple,     '@tag.attribute.html',
+  -- Purple,     '@tag.attribute.html',
   Gray,       '@constant.html',
   Normal,     'HtmlTitle',
               '@markup.heading.html',
@@ -93,7 +93,7 @@ local theme = {
               '@operator.typescript',
   Blue,       '@tag.builtin.tsx',
               '@tag.delimiter.tsx',
-  Purple,     '@tag.attribute.tsx',
+  -- Purple,     '@tag.attribute.tsx',
   Normal,     '@markup.heading.1.tsx',
               -- CSS
   Blue,       '@tag.css',
