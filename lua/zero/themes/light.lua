@@ -5,7 +5,7 @@ local white   = { bg = '#fafafa'  }
 local red     = { fg = '#8c2c2c'  }
 local green   = { fg = '#055705'  }
 local blue    = { fg = '#003c94'  }
-local purple  = { fg = '#6e2276'  }
+local purple  = { fg = '#6e2176'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
@@ -28,7 +28,7 @@ local IGray   = { fg = gray.cg    }
 
 -- Theme
 
-return {
+local theme = {
   Red,        'Red',
   Green,      'Green',
   Blue,       'Blue',
@@ -71,7 +71,9 @@ return {
               -- JS
   Green,      '@tag.javascript',
               -- HTML
+  Blue,       '@tag.html',
   Normal,     'HtmlTitle',
+              '@markup.heading.html',
               -- HEEX (Elixir)
   Blue,       '@tag.heex',
               '@constant.elixir',
@@ -85,8 +87,11 @@ return {
               '@function.method.call.tsx',
   Red,        '@keyword.return.tsx',
   Blue,       '@tag.builtin.tsx',
+  Purple,     '@tag.attribute.tsx',
   Normal,     '@markup.heading.1.tsx',
               -- CSS
   Blue,       '@tag.css',
   Green,      '@property.css',
 }
+
+return theme
