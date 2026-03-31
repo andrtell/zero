@@ -7,7 +7,7 @@ local green   = { fg = '#055705'  }
 local blue    = { fg = '#013a94'  }
 local purple  = { fg = '#6d2176'  }
 local yellow  = { bg = '#eeeed8'  }
-local cyan    = { fg = '#005f5f'  }
+local cyan    = { fg = '#006363'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
                   cg = '#dddfdf',
