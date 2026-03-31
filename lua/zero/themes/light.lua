@@ -72,7 +72,7 @@ local theme = {
               -- Leap
   Visual,     'LeapLabel',
               -- Lua
-  Cyan,       '@keyword.return.lua',
+  Blue,       '@keyword.return.lua',
               -- JS
   Green,      '@tag.javascript',
               -- HTML
@@ -93,7 +93,7 @@ local theme = {
               '@function.method.call.typescript',
               '@function.call.tsx',
               '@function.method.call.tsx',
-  Cyan,       '@keyword.return.tsx',
+  Blue,       '@keyword.return.tsx',
   Normal,     '@operator.tsx',
               '@operator.typescript',
   Blue,       '@tag.builtin.tsx',
