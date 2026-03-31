@@ -31,10 +31,13 @@ local Cyan    = { fg = cyan.fg    }
 -- Theme
 
 local theme = {
+
   Red,        'Red',
   Green,      'Green',
   Blue,       'Blue',
   Purple,     'Purple',
+  Cyan,       'Cyan',
+
   Normal,     'Normal',
               'Delimiter',
   NonText,    'NonText',
