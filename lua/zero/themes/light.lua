@@ -59,7 +59,7 @@ local theme = {
   Green,      'String',
   Red,        'Number',
               'Float',
-  Blue,       'Boolean',
+  Purple,     'Boolean',
   Gray,       'Comment',
               -- Blink
   Visual,     'BlinkCmpMenuSelection',
