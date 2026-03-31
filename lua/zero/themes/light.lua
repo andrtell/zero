@@ -77,4 +77,9 @@ return {
   Purple,     '@boolean.elixir',
               -- Tyepscript
   Purple,     '@boolean.typescript',
+              -- TSX
+  Blue,       'tsxTag',
+              'tsxCloseTag',
+              '@tag.delimiter.tsx',
+  Normal,     '@markup.heading.1.tsx',
 }
