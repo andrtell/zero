@@ -7,6 +7,7 @@ local green   = { fg = '#055705'  }
 local blue    = { fg = '#013a94'  }
 local purple  = { fg = '#6d2176'  }
 local yellow  = { bg = '#eeeed8'  }
+local cyan    = { fg = '#005f5f'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
                   cg = '#dddfdf',
@@ -25,6 +26,7 @@ local Blue    = { fg = blue.fg    }
 local Purple  = { fg = purple.fg  }
 local Gray    = { fg = gray.fg    }
 local IGray   = { fg = gray.cg    }
+local Cyan    = { fg = cyan.fg    }
 
 -- Theme
 
@@ -67,7 +69,7 @@ local theme = {
               -- Leap
   Visual,     'LeapLabel',
               -- Lua
-  Blue,       '@keyword.return.lua',
+  Cyan,       '@keyword.return.lua',
               -- JS
   Green,      '@tag.javascript',
               -- HTML
@@ -88,7 +90,7 @@ local theme = {
               '@function.method.call.typescript',
               '@function.call.tsx',
               '@function.method.call.tsx',
-  -- Blue,       '@keyword.return.tsx',
+  Cyan,       '@keyword.return.tsx',
   Normal,     '@operator.tsx',
               '@operator.typescript',
   Blue,       '@tag.builtin.tsx',
