@@ -2,10 +2,10 @@
 
 local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
-local red     = { fg = '#892d2d'  }
+local red     = { fg = '#8b2c2c'  }
 local green   = { fg = '#055705'  }
-local blue    = { fg = '#014394'  }
-local purple  = { fg = '#6e2376'  }
+local blue    = { fg = '#003d94'  }
+local purple  = { fg = '#6e2276'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
@@ -59,7 +59,6 @@ return {
   Green,      'String',
   Red,        'Number',
               'Float',
-              -- 'Type',
   Blue,       'Boolean',
   Gray,       'Comment',
               -- Blink
@@ -67,8 +66,8 @@ return {
               'BlinkCmpScrollBarThumb',
               -- Leap
   Visual,     'LeapLabel',
-              -- Dart
-  Blue,       '@lsp.type.class.dart',
+              -- Lua
+  Red,        '@keyword.return.lua',
               -- JS
   Green,      '@tag.javascript',
               -- HTML
@@ -80,11 +79,14 @@ return {
   Red,        '@keyword.elixir',
   Purple,     '@boolean.elixir',
               -- Tyepscript
-  Purple,     '@boolean.typescript',
-              -- TSX
-  Blue,       '@tag.delimiter.tsx',
-              'tsxIntrinsicTagName',
-  Normal,     'tsxTag',
-              'tsxCloseTag',
-              '@markup.heading.1.tsx',
+  Normal,     '@function.call.typescript',
+              '@function.method.call.typescript',
+              '@function.call.tsx',
+              '@function.method.call.tsx',
+  Red,        '@keyword.return.tsx',
+  Blue,       '@tag.builtin.tsx',
+  Normal,     '@markup.heading.1.tsx',
+              -- CSS
+  Blue,       '@tag.css',
+  Green,      '@property.css',
 }
