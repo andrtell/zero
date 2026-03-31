@@ -4,8 +4,8 @@ local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
 local red     = { fg = '#8c2c2c'  }
 local green   = { fg = '#055705'  }
-local blue    = { fg = '#013c94'  }
-local purple  = { fg = '#6e2176'  }
+local blue    = { fg = '#013a94'  }
+local purple  = { fg = '#6d2176'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
