@@ -5,7 +5,7 @@ local white   = { bg = '#fafafa'  }
 local red     = { fg = '#892d2d'  }
 local green   = { fg = '#055705'  }
 local blue    = { fg = '#014394'  }
-local purple  = { fg = '#6e2275'  }
+local purple  = { fg = '#6e2376'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
                   bg = '#edefef',
@@ -75,4 +75,6 @@ return {
               '@string.special.symbol.elixir',
   Red,        '@keyword.elixir',
   Purple,     '@boolean.elixir',
+              -- Tyepscript
+  Purple,     '@boolean.typescript',
 }
