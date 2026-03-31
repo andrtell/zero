@@ -2,9 +2,9 @@
 
 local black   = { fg = '#030303'  }
 local white   = { bg = '#fafafa'  }
-local red     = { fg = '#8b2c2c'  }
+local red     = { fg = '#8c2c2c'  }
 local green   = { fg = '#055705'  }
-local blue    = { fg = '#003d94'  }
+local blue    = { fg = '#003c94'  }
 local purple  = { fg = '#6e2276'  }
 local yellow  = { bg = '#eeeed8'  }
 local gray    = { fg = '#959595',
@@ -79,7 +79,7 @@ return {
   Red,        '@keyword.elixir',
   Purple,     '@boolean.elixir',
               -- Tyepscript
-  Normal,     '@function.call.typescript',
+  Red,        '@function.call.typescript',
               '@function.method.call.typescript',
               '@function.call.tsx',
               '@function.method.call.tsx',
