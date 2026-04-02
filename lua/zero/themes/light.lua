@@ -1,108 +1,92 @@
--- Colors
-
-local black   = { fg = '#070100'  }
-local white   = { bg = '#fafafa'  }
-local red     = { fg = '#8d2c2a'  }
-local green   = { fg = '#055705'  }
-local blue    = { fg = '#013a94'  }
-local purple  = { fg = '#6d2176'  }
-local yellow  = { bg = '#eeeed8'  }
-local cyan    = { fg = '#006363'  }
-local gray    = { fg = '#959595',
-                  bg = '#edefef',
-                  cg = '#dddfdf',
-                }
-
--- Opts
-
-local Normal  = { fg = black.fg,
-                  bg = white.bg   }
-local NonText = { fg = gray.fg    }
-local Visual  = { bg = gray.bg    }
-local Search  = { bg = yellow.bg  }
-local Red     = { fg = red.fg     }
-local Green   = { fg = green.fg   }
-local Blue    = { fg = blue.fg    }
-local Purple  = { fg = purple.fg  }
-local Gray    = { fg = gray.fg    }
-local IGray   = { fg = gray.cg    }
-local Cyan    = { fg = cyan.fg    }
-
--- Theme
-
-local theme = {
-
-  Red,        'Red',
-  Green,      'Green',
-  Blue,       'Blue',
-  Purple,     'Purple',
-  Cyan,       'Cyan',
-
-  Normal,     'Normal',
-              'Delimiter',
-  NonText,    'NonText',
-  Search,     'Search',
-              'CurSearch',
-              'IncSearch',
-  Visual,     'Visual',
-              'StatusLine',
-              'PMenuSelect',
-  IGray,      'WinSeparator',
-  Blue,       'Directory',
-              'Title',
-              -- Diagnostic
-  Red,        'DiagnosticError',
-  Blue,       'DiagnosticHint',
-  Purple,     'DiagnosticWarn',
-              -- Syntax
-  Blue,       'Keyword',
-              'Statement',
-              '@keyword.function',
-              '@keyword.repeat',
-              '@keyword.conditional',
-              '@keyword.type',
-  Green,      'String',
-  Red,        'Number',
-              'Float',
-  Purple,     'Boolean',
-  Gray,       'Comment',
-              -- Blink
-  Visual,     'BlinkCmpMenuSelection',
-              'BlinkCmpScrollBarThumb',
-              -- Leap
-  Visual,     'LeapLabel',
-              -- Lua
-  Blue,       '@keyword.return.lua',
-              -- JS
-  Green,      '@tag.javascript',
-              -- HTML
-  Blue,       '@tag.html',
-              '@tag.delimiter.html',
-  -- Purple,     '@tag.attribute.html',
-  Gray,       '@constant.html',
-  Normal,     'HtmlTitle',
-              '@markup.heading.html',
-              -- HEEX (Elixir)
-  Blue,       '@tag.heex',
-              '@constant.elixir',
-              '@string.special.symbol.elixir',
-  Red,        '@keyword.elixir',
-  Purple,     '@boolean.elixir',
-              -- Tyepscript
-  Normal,     '@function.call.typescript',
-              '@function.method.call.typescript',
-              '@function.call.tsx',
-              '@function.method.call.tsx',
-  Blue,       '@keyword.return.tsx',
-  Normal,     '@operator.tsx',
-              '@operator.typescript',
-  Blue,       '@tag.builtin.tsx',
-              '@tag.delimiter.tsx',
-  -- Purple,     '@tag.attribute.tsx',
-  Normal,     '@markup.heading.1.tsx',
-              -- CSS
-  Blue,       '@tag.css',
-  Green,      '@property.css',
+local fg = {
+  black   =   '#070100',
+  red     =   '#8d2c2a',
+  green   =   '#055705',
+  blue    =   '#013a94',
+  purple  =   '#6d2176',
+  cyan    =   '#006363',
+  gray    = { '#959595',
+              '#dddfdf', }
 }
 
-return theme
+local bg = {
+  white   =   '#fafafa',
+  gray    =   '#edefef',
+  yellow  =   '#eeeed8',
+}
+
+local hi = {
+  { fg = fg.black,
+    bg = bg.white   },    'Text',
+  { fg = fg.gray[1] },    'Gray1',
+  { fg = fg.gray[2] },    'Gray2',
+  { fg = fg.red     },    'Red',
+  { fg = fg.green   },    'Green',
+  { fg = fg.blue    },    'Blue',
+  { fg = fg.purple  },    'Purple',
+  { fg = fg.cyan    },    'Cyan',
+  { bg = bg.gray    },    'GrayB',
+  { bg = bg.yellow  },    'YellowB',
+}
+
+local l = {}
+
+for _, group in ipairs(hi) do
+  if "table" ~= type(group) then
+    l[group] = { link = group }
+  end
+end
+
+local ih = {
+  l.Text,      'Normal',
+               'Delimiter',
+  l.Gray1,     'NonText',
+  l.Gray2,     'WinSeparator',
+  l.GrayB,     'Visual',
+               'StatusLine',
+               'PMenuSelect',
+  l.YellowB,   'Search',
+               'CurSearch',
+               'IncSearch',
+  l.Blue,      'Directory',
+               'Title',
+  l.Red,       'DiagnosticError',
+  l.Blue,      'DiagnosticHint',
+  l.Purple,    'DiagnosticWarn',
+  l.Gray1,     'Comment',
+  l.Blue,      'Keyword',
+               'Statement',
+               '@keyword.function',
+               '@keyword.repeat',
+               '@keyword.conditional',
+               '@keyword.type',
+  l.Green,     'String',
+  l.Red,       'Number',
+               'Float',
+  l.Purple,    'Boolean',
+  l.GrayBg,    'BlinkCmpMenuSelection',
+               'BlinkCmpScrollBarThumb',
+  l.YellowB,   'LeapLabel',
+  l.Green,     '@tag.javascript',
+  l.Blue,      '@tag.html',
+               '@tag.delimiter.html',
+  l.Gray1,     '@constant.html',
+  l.Text,      '@markup.heading.html',
+  l.Blue,      '@tag.css',
+  l.Green,     '@property.css',
+  l.Text,      '@function.call.typescript',
+               '@function.method.call.typescript',
+               '@function.call.tsx',
+               '@function.method.call.tsx',
+               '@operator.tsx',
+               '@operator.typescript',
+               '@markup.heading.1.tsx',
+  l.Blue,      '@tag.builtin.tsx',
+               '@tag.delimiter.tsx',
+}
+
+for _, group in ipairs(ih) do
+  table.insert(hi, group)
+end
+
+return hi
