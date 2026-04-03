@@ -4,7 +4,7 @@ local fg = {
   green   =   '#055705',
   blue    =   '#013a94',
   -- purple  =   '#6d2176',
-  purple  =   '#7b1e7b',
+  purple  =   '#7b277b',
   cyan    =   '#006363',
   orange  =   '#904f2b',
   gray    = { '#959595',
@@ -85,6 +85,7 @@ local ih = {
                '@operator.typescript',
                '@markup.heading.1.tsx',
   l.Red,       '@type.builtin.typescript',
+               '@type.typescript',
   l.Blue,      '@tag.builtin.tsx',
                '@tag.delimiter.tsx',
 }
