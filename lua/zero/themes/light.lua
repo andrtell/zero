@@ -80,7 +80,6 @@ local ih = {
   l.Purple,   '@function.call.typescript',
               '@function.call.tsx',
   l.Text,     '@function.method.call.typescript',
-              '@function.call.tsx',
               '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
