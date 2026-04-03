@@ -6,7 +6,8 @@ local fg = {
   -- purple  =   '#6d2176',
   purple  =   '#79217a',
   cyan    =   '#006666',
-  orange  =   '#904f2b',
+  orange  =   '#905c3c',
+  brown   =   '#573000',
   gray    = { '#959595',
               '#dddfdf', }
 }
@@ -93,6 +94,8 @@ local ih = {
               '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
+  l.Text,     '@punctuation.special.typescript',
+              '@punctuation.special.tsx',
   l.Text,     '@markup.heading.1.tsx',
               '@operator.tsx',
               '@operator.typescript',
