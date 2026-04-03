@@ -91,9 +91,9 @@ local ih = {
 
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
-  l.Brown,    '@punctuation.special.typescript',
+  l.Green,    '@punctuation.special.typescript',
               '@punctuation.special.tsx',
-              '@tag.attribute.tsx',
+  l.Brown,    '@tag.attribute.tsx',
   l.Blue,     '@tag.builtin.tsx',
   l.Gray3,    '@tag.delimiter.tsx',
   l.Text,     '@markup.heading.1.tsx',
