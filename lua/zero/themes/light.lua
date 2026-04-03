@@ -9,7 +9,7 @@ local fg = {
   brown   =   '#804c30',
   gray    = { '#959595',
               '#dddfdf',
-              '#717171', }
+              '#6f6f6f', }
 }
 
 local bg = {
