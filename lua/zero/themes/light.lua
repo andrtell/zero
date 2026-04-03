@@ -6,8 +6,7 @@ local fg = {
   -- purple  =   '#6d2176',
   purple  =   '#79217a',
   cyan    =   '#006666',
-  orange  =   '#905c3c',
-  brown   =   '#573000',
+  brown   =   '#804c30',
   gray    = { '#959595',
               '#dddfdf', }
 }
@@ -28,7 +27,7 @@ local hi = {
   { fg = fg.blue    },    'Blue',
   { fg = fg.purple  },    'Purple',
   { fg = fg.cyan    },    'Cyan',
-  { fg = fg.orange  },    'Orange',
+  { fg = fg.brown  },     'Brown',
   { bg = bg.gray    },    'GrayB',
   { bg = bg.yellow  },    'YellowB',
 }
@@ -94,13 +93,15 @@ local ih = {
               '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
-  l.Orange,   '@punctuation.special.typescript',
-              '@punctuation.special.tsx',
+  -- l.Brown,    '@punctuation.special.typescript',
+  --             '@punctuation.special.tsx',
   l.Text,     '@markup.heading.1.tsx',
               '@operator.tsx',
               '@operator.typescript',
               '@tag.delimiter.tsx',
               '@tag.builtin.tsx',
+              '@variable.typescript',
+              '@variable.member.typescript',
 }
 
 for _, group in ipairs(ih) do
