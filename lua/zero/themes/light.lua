@@ -67,7 +67,7 @@ local ih = {
   l.Red,       'Number',
                'Float',
   l.Purple,    'Boolean',
-  l.GrayBg,    'BlinkCmpMenuSelection',
+  l.GrayB,     'BlinkCmpMenuSelection',
                'BlinkCmpScrollBarThumb',
   l.YellowB,   'LeapLabel',
   l.Green,     '@tag.javascript',
