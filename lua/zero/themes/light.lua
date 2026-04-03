@@ -64,7 +64,7 @@ local ih = {
                '@keyword.conditional',
                '@keyword.type',
   l.Green,     'String',
-  l.Red,       'Number',
+  l.Blue,      'Number',
                'Float',
   l.Purple,    'Boolean',
   l.GrayB,     'BlinkCmpMenuSelection',
