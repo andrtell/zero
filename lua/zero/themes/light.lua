@@ -76,7 +76,7 @@ local ih = {
   l.Green,    'String',
   l.Blue,     'Number',
               'Float',
-  l.Blue,     'Boolean',
+  l.Purple,   'Boolean',
 
   l.Green,    '@tag.javascript',
 
@@ -91,10 +91,6 @@ local ih = {
 
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
-  l.Purple,   '@function.call.typescript',
-              '@function.method.call.typescript',
-              '@function.call.tsx',
-              '@function.method.call.tsx',
   l.Brown,    '@punctuation.special.typescript',
               '@punctuation.special.tsx',
               '@tag.attribute.tsx',
