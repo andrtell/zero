@@ -94,7 +94,7 @@ local ih = {
               '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
-  l.Text,     '@punctuation.special.typescript',
+  l.Orange,   '@punctuation.special.typescript',
               '@punctuation.special.tsx',
   l.Text,     '@markup.heading.1.tsx',
               '@operator.tsx',
