@@ -51,11 +51,19 @@ local ih = {
   l.YellowB,  'Search',
               'CurSearch',
               'IncSearch',
+
   l.Blue,     'Directory',
               'Title',
+
   l.Red,      'DiagnosticError',
   l.Blue,     'DiagnosticHint',
   l.Purple,   'DiagnosticWarn',
+
+  l.GrayB,    'BlinkCmpMenuSelection',
+              'BlinkCmpScrollBarThumb',
+
+  l.YellowB,  'LeapLabel',
+
   l.Gray1,    'Comment',
   l.Blue,     'Keyword',
               'Statement',
@@ -67,27 +75,29 @@ local ih = {
   l.Blue,     'Number',
               'Float',
   l.Cyan,     'Boolean',
-  l.GrayB,    'BlinkCmpMenuSelection',
-              'BlinkCmpScrollBarThumb',
-  l.YellowB,  'LeapLabel',
+
+
   l.Green,    '@tag.javascript',
+
   l.Blue,     '@tag.html',
               '@tag.delimiter.html',
   l.Gray1,    '@constant.html',
   l.Text,     '@markup.heading.html',
+
   l.Blue,     '@tag.css',
   l.Green,    '@property.css',
+
   l.Purple,   '@function.call.typescript',
+              '@function.method.call.typescript',
               '@function.call.tsx',
-  l.Text,     '@function.method.call.typescript',
               '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
-  l.Text,     '@tag.builtin.tsx',
-  l.Text,     '@tag.delimiter.tsx',
-  l.Text,     '@operator.tsx',
+  l.Text,     '@markup.heading.1.tsx',
+              '@operator.tsx',
               '@operator.typescript',
-              '@markup.heading.1.tsx',
+              '@tag.delimiter.tsx',
+              '@tag.builtin.tsx',
 }
 
 for _, group in ipairs(ih) do
