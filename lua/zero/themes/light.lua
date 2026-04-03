@@ -77,17 +77,17 @@ local ih = {
   l.Text,      '@markup.heading.html',
   l.Blue,      '@tag.css',
   l.Green,     '@property.css',
-  l.Text,      '@function.call.typescript',
+  l.Purple,    '@function.call.typescript',
                '@function.method.call.typescript',
                '@function.call.tsx',
                '@function.method.call.tsx',
-               '@operator.tsx',
-               '@operator.typescript',
-               '@markup.heading.1.tsx',
   l.Red,       '@type.builtin.typescript',
                '@type.typescript',
   l.Blue,      '@tag.builtin.tsx',
                '@tag.delimiter.tsx',
+  l.Text,      '@operator.tsx',
+               '@operator.typescript',
+               '@markup.heading.1.tsx',
 }
 
 for _, group in ipairs(ih) do
