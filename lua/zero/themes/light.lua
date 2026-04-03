@@ -76,7 +76,8 @@ local ih = {
   l.Green,    'String',
   l.Blue,     'Number',
               'Float',
-  l.Cyan,     'Boolean',
+  l.Blue,     'Boolean',
+  l.Purple,   '@function.call',
 
 
   l.Green,    '@tag.javascript',
@@ -90,10 +91,10 @@ local ih = {
   l.Blue,     '@tag.css',
   l.Green,    '@property.css',
 
-  l.Purple,   '@function.call.typescript',
-              '@function.method.call.typescript',
-              '@function.call.tsx',
-              '@function.method.call.tsx',
+  -- l.Purple,   '@function.call.typescript',
+  --             '@function.method.call.typescript',
+  --             '@function.call.tsx',
+  --             '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
   l.Brown,    '@punctuation.special.typescript',
