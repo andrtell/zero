@@ -81,8 +81,9 @@ local ih = {
 
   l.Green,    '@tag.javascript',
 
-  l.Text,     '@tag.html',
-  l.Text,    '@tag.delimiter.html',
+  l.Blue,     '@tag.html',
+  l.Text,     '@tag.delimiter.html',
+  l.Brown,    '@tag.attribute.html',
   l.Gray1,    '@constant.html',
   l.Text,     '@markup.heading.html',
 
@@ -97,8 +98,9 @@ local ih = {
               '@type.typescript',
   l.Brown,    '@punctuation.special.typescript',
               '@punctuation.special.tsx',
-  l.Text,     '@tag.builtin.tsx',
-  l.Text,    '@tag.delimiter.tsx',
+              '@tag.attribute.tsx',
+  l.Blue,     '@tag.builtin.tsx',
+  l.Text,     '@tag.delimiter.tsx',
   l.Text,     '@markup.heading.1.tsx',
               '@operator.tsx',
               '@operator.typescript',
