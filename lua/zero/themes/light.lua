@@ -79,7 +79,6 @@ local ih = {
   l.Blue,     'Boolean',
   l.Purple,   '@function.call',
 
-
   l.Green,    '@tag.javascript',
 
   l.Blue,     '@tag.html',
@@ -91,10 +90,6 @@ local ih = {
   l.Blue,     '@tag.css',
   l.Green,    '@property.css',
 
-  -- l.Purple,   '@function.call.typescript',
-  --             '@function.method.call.typescript',
-  --             '@function.call.tsx',
-  --             '@function.method.call.tsx',
   l.Red,      '@type.builtin.typescript',
               '@type.typescript',
   l.Brown,    '@punctuation.special.typescript',
@@ -114,3 +109,8 @@ for _, group in ipairs(ih) do
 end
 
 return hi
+
+-- l.Purple,   '@function.call.typescript',
+--             '@function.method.call.typescript',
+--             '@function.call.tsx',
+--             '@function.method.call.tsx',
