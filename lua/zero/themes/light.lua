@@ -66,7 +66,7 @@ local ih = {
   l.Green,     'String',
   l.Blue,      'Number',
                'Float',
-  l.Purple,    'Boolean',
+  l.Cyan,      'Boolean',
   l.GrayB,     'BlinkCmpMenuSelection',
                'BlinkCmpScrollBarThumb',
   l.YellowB,   'LeapLabel',
