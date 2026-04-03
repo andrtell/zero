@@ -8,7 +8,8 @@ local fg = {
   cyan    =   '#006666',
   brown   =   '#804c30',
   gray    = { '#959595',
-              '#dddfdf', }
+              '#dddfdf',
+              '#4d4d4d', }
 }
 
 local bg = {
@@ -22,6 +23,7 @@ local hi = {
     bg = bg.white   },    'Text',
   { fg = fg.gray[1] },    'Gray1',
   { fg = fg.gray[2] },    'Gray2',
+  { fg = fg.gray[3] },    'Gray3',
   { fg = fg.red     },    'Red',
   { fg = fg.green   },    'Green',
   { fg = fg.blue    },    'Blue',
@@ -95,11 +97,11 @@ local ih = {
               '@type.typescript',
   l.Brown,    '@punctuation.special.typescript',
               '@punctuation.special.tsx',
+  l.Blue,     '@tag.delimiter.tsx',
+              '@tag.builtin.tsx',
   l.Text,     '@markup.heading.1.tsx',
               '@operator.tsx',
               '@operator.typescript',
-              '@tag.delimiter.tsx',
-              '@tag.builtin.tsx',
               '@variable.typescript',
               '@variable.member.typescript',
 }
