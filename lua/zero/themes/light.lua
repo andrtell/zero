@@ -83,7 +83,7 @@ local ih = {
                '@function.method.call.tsx',
   l.Red,       '@type.builtin.typescript',
                '@type.typescript',
-  l.Blue,      '@tag.builtin.tsx',
+  l.Text,      '@tag.builtin.tsx',
                '@tag.delimiter.tsx',
   l.Text,      '@operator.tsx',
                '@operator.typescript',
