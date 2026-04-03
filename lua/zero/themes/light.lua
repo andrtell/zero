@@ -3,8 +3,10 @@ local fg = {
   red     =   '#8d2c2a',
   green   =   '#055705',
   blue    =   '#013a94',
-  purple  =   '#6d2176',
+  -- purple  =   '#6d2176',
+  purple  =   '#7b1e7b',
   cyan    =   '#006363',
+  orange  =   '#904f2b',
   gray    = { '#959595',
               '#dddfdf', }
 }
@@ -25,6 +27,7 @@ local hi = {
   { fg = fg.blue    },    'Blue',
   { fg = fg.purple  },    'Purple',
   { fg = fg.cyan    },    'Cyan',
+  { fg = fg.orange  },    'Orange',
   { bg = bg.gray    },    'GrayB',
   { bg = bg.yellow  },    'YellowB',
 }
@@ -81,6 +84,7 @@ local ih = {
                '@operator.tsx',
                '@operator.typescript',
                '@markup.heading.1.tsx',
+  l.Red,       '@type.builtin.typescript',
   l.Blue,      '@tag.builtin.tsx',
                '@tag.delimiter.tsx',
 }
