@@ -77,7 +77,7 @@ local ih = {
   l.Text,      '@markup.heading.html',
   l.Blue,      '@tag.css',
   l.Green,     '@property.css',
-  l.Purple,    '@function.call.typescript',
+  l.Text,      '@function.call.typescript',
                '@function.method.call.typescript',
                '@function.call.tsx',
                '@function.method.call.tsx',
