@@ -4,12 +4,12 @@ local fg = {
   green   =   '#055705',
   blue    =   '#013a94',
   purple  =   '#792079',
-  brown   =   '#7d3b12',
+  brown   =   '#7d3b13',
   -- purple  =   '#6d2176',
   cyan    =   '#006666',
   gray    = { '#959595',
               '#dddfdf',
-              '#5c5c60', }
+              '#5b5b60', }
 }
 
 local bg = {
@@ -81,7 +81,7 @@ local ih = {
   l.Green,    '@tag.javascript',
 
   l.Blue,     '@tag.html',
-  l.Blue,     '@tag.delimiter.html',
+  l.Gray3,    '@tag.delimiter.html',
   l.Brown,    '@tag.attribute.html',
   l.Gray1,    '@constant.html',
   l.Text,     '@markup.heading.html',
@@ -95,7 +95,7 @@ local ih = {
               '@punctuation.special.tsx',
               '@tag.attribute.tsx',
   l.Blue,     '@tag.builtin.tsx',
-  l.Blue,     '@tag.delimiter.tsx',
+  l.Gray3,    '@tag.delimiter.tsx',
   l.Text,     '@markup.heading.1.tsx',
               '@operator.tsx',
               '@operator.typescript',
