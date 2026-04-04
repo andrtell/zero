@@ -78,6 +78,10 @@ local ih = {
               'Float',
   l.Purple,   'Boolean',
 
+  l.Text,     '@number.go',
+              '@number.float.go',
+  l.Red,      '@type.go',
+
   l.Green,    '@tag.javascript',
 
   l.Blue,     '@tag.html',
