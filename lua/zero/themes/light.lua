@@ -111,10 +111,11 @@ local ih = {
               -- '@function.call.janet_simple',
   l.Red,      '@number.janet_simple',
 
-  l.Red,      'JanetMacro',
-              'JanetSpecialForm',
+  l.Blue,     'JanetSpecialForm',
   l.Blue,     'JanetFunction',
-  l.Blue,      'JanetNumber',
+  l.Blue,     'JanetMacro',
+  l.Red,      'JanetNumber',
+  l.Purple,   'JanetBoolean',
 }
 
 for _, group in ipairs(ih) do
