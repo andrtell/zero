@@ -114,9 +114,10 @@ local ih = {
               '@function.macro.janet_simple',
               '@function.builtin.janet_simple',
               '@function.call.janet_simple',
-              '@number.janet_simple',
-              '@boolean.janet_simple',
-              '@string.janet_simple',
+  l.Red,      '@number.janet_simple',
+  l.Blue,     '@boolean.janet_simple',
+  l.Green,    '@string.janet_simple',
+
   l.Red,      'RainbowDelimiterRed',
   l.Blue,     'RainbowDelimiterBlue',
   l.Cyan,     'RainbowDelimiterGreen',
