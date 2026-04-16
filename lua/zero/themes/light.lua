@@ -105,16 +105,18 @@ local ih = {
               '@operator.typescript',
               '@variable.typescript',
               '@variable.member.typescript',
-  l.Red,      '@function.macro.janet_simple',
-  l.Blue,     '@function.builtin.janet_simple',
-              -- '@function.call.janet_simple',
-  l.Red,      '@number.janet_simple',
 
   l.Text,     'JanetSpecialForm',
               'JanetFunction',
               'JanetMacro',
               'JanetNumber',
               'JanetBoolean',
+              '@function.macro.janet_simple',
+              '@function.builtin.janet_simple',
+              '@function.call.janet_simple',
+              '@number.janet_simple',
+              '@boolean.janet_simple',
+              '@string.janet_simple',
 }
 
 for _, group in ipairs(ih) do
