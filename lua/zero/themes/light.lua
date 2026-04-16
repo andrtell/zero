@@ -117,6 +117,10 @@ local ih = {
               '@number.janet_simple',
               '@boolean.janet_simple',
               '@string.janet_simple',
+  l.Red,      'RainbowDelimiterRed',
+  l.Blue,     'RainbowDelimiterBlue',
+  l.Cyan,     'RainbowDelimiterGreen',
+  l.Purple,   'RainbowDelimiterPurple',
 }
 
 for _, group in ipairs(ih) do
