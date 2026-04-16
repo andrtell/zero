@@ -50,11 +50,10 @@ local ih = {
   l.GrayB,    'Visual',
               'StatusLine',
               'PMenuSelect',
-              'MatchParen',
   l.YellowB,  'Search',
               'CurSearch',
               'IncSearch',
-
+              'MatchParen',
   l.Blue,     'Directory',
               'Title',
 
@@ -111,11 +110,11 @@ local ih = {
               -- '@function.call.janet_simple',
   l.Red,      '@number.janet_simple',
 
-  l.Blue,     'JanetSpecialForm',
-  l.Blue,     'JanetFunction',
-  l.Blue,     'JanetMacro',
-  l.Red,      'JanetNumber',
-  l.Purple,   'JanetBoolean',
+  l.Text,     'JanetSpecialForm',
+              'JanetFunction',
+              'JanetMacro',
+              'JanetNumber',
+              'JanetBoolean',
 }
 
 for _, group in ipairs(ih) do
