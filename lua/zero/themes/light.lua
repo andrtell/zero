@@ -1,12 +1,12 @@
 local fg = {
-  black   =   '#070100',
-  red     =   '#8d2c2a',
-  green   =   '#055705',
-  blue    =   '#013a94',
-  purple  =   '#792079',
+  black   =   '#060100',
+  red     =   '#8e2a29',
+  green   =   '#035803',
+  blue    =   '#013695',
+  purple  =   '#791e79',
   brown   =   '#7d3b13',
   -- purple  =   '#6d2176',
-  cyan    =   '#006666',
+  cyan    =   '#006464',
   gray    = { '#959595',
               '#dddfdf',
               '#5b5b60', }
@@ -82,6 +82,10 @@ local ih = {
               '@number.float.go',
   l.Red,      '@type.go',
 
+  l.Red,      '@type.builtin.c',
+              '@type.c',
+  l.Cyan,     '@constant.c',
+
   l.Green,    '@tag.javascript',
 
   l.Blue,     '@tag.html',
@@ -114,7 +118,7 @@ local ih = {
               '@function.macro.janet_simple',
               '@function.builtin.janet_simple',
               '@function.call.janet_simple',
-  l.Red,      '@number.janet_simple',
+  l.Text,     '@number.janet_simple',
   l.Blue,     '@boolean.janet_simple',
   l.Green,    '@string.janet_simple',
 
