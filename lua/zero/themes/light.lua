@@ -1,8 +1,8 @@
 local fg = {
   black   =   '#060100',
-  red     =   '#8e2a29',
-  green   =   '#025803',
-  blue    =   '#013495',
+  red     =   '#8d2b29',
+  green   =   '#025902',
+  blue    =   '#023495',
   purple  =   '#791e79',
   brown   =   '#7d3b13',
   -- purple  =   '#6d2176',
