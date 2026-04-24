@@ -126,6 +126,10 @@ local ih = {
   l.Blue,     'RainbowDelimiterBlue',
   l.Cyan,     'RainbowDelimiterGreen',
   l.Purple,   'RainbowDelimiterPurple',
+
+  l.Red,      '@constructor.ocaml',
+  l.Cyan,     '@module.ocaml',
+  l.Purple,   '@function.call.ocaml',
 }
 
 for _, group in ipairs(ih) do
