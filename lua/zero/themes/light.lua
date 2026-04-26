@@ -136,6 +136,7 @@ local ih = {
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
   l.Gray4,    '@punctuation.delimiter.ocaml',
+  l.Black,    '@label.ocaml',
 }
 
 for _, group in ipairs(ih) do
