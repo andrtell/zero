@@ -9,7 +9,8 @@ local fg = {
   orange  =   '#a95400',
   gray    = { '#959595',
               '#dddfdf',
-              '#5b5b60', }
+              '#5b5b60',
+              '#474747', }
 }
 
 local bg = {
@@ -24,6 +25,7 @@ local hi = {
   { fg = fg.gray[1] },    'Gray1',
   { fg = fg.gray[2] },    'Gray2',
   { fg = fg.gray[3] },    'Gray3',
+  { fg = fg.gray[4] },    'Gray4',
   { fg = fg.red     },    'Red',
   { fg = fg.green   },    'Green',
   { fg = fg.blue    },    'Blue',
@@ -133,6 +135,7 @@ local ih = {
   l.Orange,   '@type.builtin.ocaml',
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
+  l.Gray4,    '@punctuation.delimiter.ocaml',
 }
 
 for _, group in ipairs(ih) do
