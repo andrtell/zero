@@ -1,12 +1,12 @@
 local fg = {
   black   =   '#060100',
-  red     =   '#8d2b29',
+  red     =   '#8d2926',
   green   =   '#025902',
-  blue    =   '#023495',
-  purple  =   '#791e79',
+  blue    =   '#023494',
+  purple  =   '#741874',
+  cyan    =   '#0e6466',
   brown   =   '#7d3b13',
-  -- purple  =   '#6d2176',
-  cyan    =   '#006464',
+  orange  =   '#a95400',
   gray    = { '#959595',
               '#dddfdf',
               '#5b5b60', }
@@ -30,6 +30,7 @@ local hi = {
   { fg = fg.purple  },    'Purple',
   { fg = fg.cyan    },    'Cyan',
   { fg = fg.brown  },     'Brown',
+  { fg = fg.orange  },    'Orange',
   { bg = bg.gray    },    'GrayB',
   { bg = bg.yellow  },    'YellowB',
 }
@@ -129,7 +130,9 @@ local ih = {
 
   l.Red,      '@constructor.ocaml',
   l.Cyan,     '@module.ocaml',
+  l.Orange,   '@type.builtin.ocaml',
   l.Purple,   '@function.call.ocaml',
+              '@function.ocaml',
 }
 
 for _, group in ipairs(ih) do
