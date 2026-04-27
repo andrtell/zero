@@ -133,10 +133,10 @@ local ih = {
   l.Red,      '@constructor.ocaml',
   l.Text,     '@module.ocaml',
   l.Orange,   '@type.builtin.ocaml',
-  l.Purple,   '@function.call.ocaml',
+  l.Text,     '@function.call.ocaml',
               '@function.ocaml',
-  l.Text,     '@label.ocaml',
-  l.Gray4,    '@punctuation.delimiter.ocaml',
+              '@label.ocaml',
+              '@punctuation.delimiter.ocaml',
 }
 
 for _, group in ipairs(ih) do
