@@ -131,8 +131,9 @@ local ih = {
   l.Purple,   'RainbowDelimiterPurple',
 
   l.Red,      '@constructor.ocaml',
+  l.Red,      '@type.builtin.ocaml',
   l.Text,     '@module.ocaml',
-  l.Orange,   '@type.builtin.ocaml',
+  l.Text,     '@number.ocaml',
   l.Text,     '@function.call.ocaml',
               '@function.ocaml',
               '@label.ocaml',
