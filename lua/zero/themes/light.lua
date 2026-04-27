@@ -1,10 +1,10 @@
 local fg = {
   black   =   '#060100',
-  red     =   '#8d2926',
+  red     =   '#8c2825',
   green   =   '#025902',
   blue    =   '#023494',
   purple  =   '#741874',
-  cyan    =   '#0e6466',
+  cyan    =   '#0e6163',
   brown   =   '#7d3b13',
   orange  =   '#a95400',
   gray    = { '#959595',
@@ -131,7 +131,7 @@ local ih = {
   l.Purple,   'RainbowDelimiterPurple',
 
   l.Red,      '@constructor.ocaml',
-  l.Cyan,     '@module.ocaml',
+  l.Text,     '@module.ocaml',
   l.Orange,   '@type.builtin.ocaml',
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
