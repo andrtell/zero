@@ -136,7 +136,7 @@ local ih = {
   l.Orange,   '@keyword.modifier.ocaml',
   l.Text,     '@module.ocaml',
   l.Text,     '@number.ocaml',
-  l.Red,      '@function.call.ocaml',
+  l.Text,     '@function.call.ocaml',
               '@function.ocaml',
   l.Text,     '@label.ocaml',
               '@punctuation.delimiter.ocaml',
