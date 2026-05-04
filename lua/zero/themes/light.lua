@@ -1,7 +1,7 @@
 local fg = {
   black   =   '#060100',
   blue    =   '#032e95',
-  orange  =   '#9c6c04',
+  orange  =   '#9b6b02',
   green   =   '#035703',
   red     =   '#812a28',
   cyan    =   '#065f6e',
@@ -136,10 +136,10 @@ local ih = {
   l.Blue,     '@keyword.type.ocaml',
   l.Blue,     '@keyword.modifier.ocaml',
   l.Cyan,     '@module.ocaml',
-  l.Orange,   '@number.ocaml',
+  l.Text,     '@number.ocaml',
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
-  l.Purple,   '@operator.ocaml',
+  l.Orange,   '@operator.ocaml',
   l.Text,     '@label.ocaml',
               '@punctuation.delimiter.ocaml',
 }
