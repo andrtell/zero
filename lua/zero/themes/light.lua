@@ -139,11 +139,11 @@ local ih = {
   l.Orange,   '@number.ocaml',
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
-  { italic = true, fg = '#202020' },
-              '@operator.ocaml',
+  l.Text,     '@punctuation.bracket.ocaml',
               '@label.ocaml',
+  { italic = true },
+              '@operator.ocaml',
               '@punctuation.delimiter.ocaml',
-              '@punctuation.bracket.ocaml',
 }
 
 for _, group in ipairs(ih) do
