@@ -1,9 +1,9 @@
 local fg = {
-  black   =   '#060100',
+  black   =   '#040404',
   blue    =   '#032e95',
   orange  =   '#9b6b02',
   green   =   '#035703',
-  red     =   '#812a28',
+  red     =   '#812d29',
   cyan    =   '#065f6e',
   purple  =   '#731673',
   brown   =   '#7d3b13',
@@ -14,7 +14,7 @@ local fg = {
 }
 
 local bg = {
-  white   =   '#f9f9f9',
+  white   =   '#faf9f9',
   gray    =   '#edefef',
   yellow  =   '#eeeed8',
 }
@@ -131,17 +131,19 @@ local ih = {
   l.Purple,   'RainbowDelimiterPurple',
 
   l.Green,    '@constructor.ocaml',
-  l.Red,      '@type.builtin.ocaml',
-              '@type.ocaml',
+  { fg = fg.red, italic=false }, '@type.ocaml',
+  { fg = fg.red, italic=false },      '@type.builtin.ocaml',
   l.Blue,     '@keyword.type.ocaml',
   l.Blue,     '@keyword.modifier.ocaml',
   l.Cyan,     '@module.ocaml',
   l.Orange,   '@number.ocaml',
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
-  l.Text,     '@operator.ocaml',
-  l.Text,     '@label.ocaml',
+  { italic = true, fg = '#202020' },
+              '@operator.ocaml',
+              '@label.ocaml',
               '@punctuation.delimiter.ocaml',
+              '@punctuation.bracket.ocaml',
 }
 
 for _, group in ipairs(ih) do
