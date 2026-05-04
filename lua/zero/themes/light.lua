@@ -14,7 +14,7 @@ local fg = {
 }
 
 local bg = {
-  white   =   '#faf9f9',
+  white   =   '#f9f9fa',
   gray    =   '#edefef',
   yellow  =   '#eeeed8',
 }
@@ -141,7 +141,7 @@ local ih = {
               '@function.ocaml',
   l.Text,     '@punctuation.bracket.ocaml',
               '@label.ocaml',
-  { italic = true },
+  { italic = true, bg = "none" },
               '@operator.ocaml',
               '@punctuation.delimiter.ocaml',
 }
