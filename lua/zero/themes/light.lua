@@ -136,10 +136,10 @@ local ih = {
   l.Blue,     '@keyword.type.ocaml',
   l.Blue,     '@keyword.modifier.ocaml',
   l.Cyan,     '@module.ocaml',
-  l.Text,     '@number.ocaml',
+  l.Orange,   '@number.ocaml',
   l.Purple,   '@function.call.ocaml',
               '@function.ocaml',
-  l.Orange,   '@operator.ocaml',
+  l.Text,     '@operator.ocaml',
   l.Text,     '@label.ocaml',
               '@punctuation.delimiter.ocaml',
 }
