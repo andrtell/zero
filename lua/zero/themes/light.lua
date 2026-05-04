@@ -130,7 +130,7 @@ local ih = {
   l.Cyan,     'RainbowDelimiterGreen',
   l.Purple,   'RainbowDelimiterPurple',
 
-  l.Text,     '@constructor.ocaml',
+  l.Green,    '@constructor.ocaml',
   -- { fg = 'none' },
   l.Red,      '@type.builtin.ocaml',
               '@type.ocaml',
