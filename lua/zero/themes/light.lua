@@ -1,22 +1,53 @@
+-- local fg = {
+--   black   =   '#1f1f1f',
+--   blue    =   '#1354b0',
+--   red     =   '#942b27',
+--   purple  =   '#6c2f9e',
+--   green   =   '#1a6b2a',
+--
+--   orange  =   '#9a6a01',
+--   cyan    =   '#00797b',
+--   brown   =   '#7d3b13',
+--   gray    = { '#959595',
+--               '#dddfdf',
+--               '#5b5b60',
+--               '#474747', }
+-- }
+--
+-- local fg = {
+--   black   =   '#040404',
+--   blue    =   '#032e90',
+--   purple  =   '#6e1e8e',
+--   red     =   '#7f1f1f',
+--   orange  =   '#9a6a01',
+--   green   =   '#015602',
+--   cyan    =   '#065f6e',
+--   brown   =   '#7d3b13',
+--   gray    = { '#959595',
+--               '#dddfdf',
+--               '#5b5b60',
+--               '#474747', }
+-- }
+
+local bg = {
+  white   =   '#faf9f8',
+  gray    =   '#edefef',
+  yellow  =   '#eeeed8',
+}
+
 local fg = {
-  black   =   '#040404',
-  blue    =   '#032e95',
-  orange  =   '#9a6a01',
+  black   =   '#161616',
+  blue    =   '#032e90',
+  purple  =   '#6e1e8e',
+  red     =   '#771717',
+  orange  =   '#8f6102',
   green   =   '#015602',
-  red     =   '#842a2a',
   cyan    =   '#065f6e',
-  purple  =   '#731673',
   brown   =   '#7d3b13',
   gray    = { '#959595',
               '#dddfdf',
               '#5b5b60',
               '#474747', }
-}
-
-local bg = {
-  white   =   '#f9f9fa',
-  gray    =   '#edefef',
-  yellow  =   '#eeeed8',
 }
 
 local hi = {
@@ -69,6 +100,11 @@ local ih = {
 
   l.YellowB,  'LeapLabel',
 
+  l.Red,      'RainbowDelimiterRed',
+  l.Blue,     'RainbowDelimiterBlue',
+  l.Cyan,     'RainbowDelimiterGreen',
+  l.Purple,   'RainbowDelimiterPurple',
+
   l.Gray1,    'Comment',
   l.Blue,     'Keyword',
               'Statement',
@@ -77,7 +113,7 @@ local ih = {
               '@keyword.conditional',
               '@keyword.type',
   l.Green,    'String',
-  l.Blue,     'Number',
+  l.Text,     'Number',
               'Float',
   l.Purple,   'Boolean',
 
@@ -85,64 +121,12 @@ local ih = {
               '@number.float.go',
   l.Red,      '@type.go',
 
-  l.Red,      '@type.builtin.c',
-              '@type.c',
-  l.Cyan,     '@constant.c',
-
-  l.Green,    '@tag.javascript',
-
-  l.Blue,     '@tag.html',
-  l.Gray3,    '@tag.delimiter.html',
-  l.Brown,    '@tag.attribute.html',
-  l.Gray1,    '@constant.html',
-  l.Text,     '@markup.heading.html',
-
-  l.Blue,     '@tag.css',
-  l.Green,    '@property.css',
-
-  l.Red,      '@type.builtin.typescript',
-              '@type.typescript',
-  l.Green,    '@punctuation.special.typescript',
-              '@punctuation.special.tsx',
-  l.Brown,    '@tag.attribute.tsx',
-  l.Blue,     '@tag.builtin.tsx',
-  l.Gray3,    '@tag.delimiter.tsx',
-  l.Text,     '@markup.heading.1.tsx',
-              '@operator.tsx',
-              '@operator.typescript',
-              '@variable.typescript',
-              '@variable.member.typescript',
-
-  l.Text,     'JanetSpecialForm',
-              'JanetFunction',
-              'JanetMacro',
-              'JanetNumber',
-              'JanetBoolean',
-              '@function.macro.janet_simple',
-              '@function.builtin.janet_simple',
-              '@function.call.janet_simple',
-  l.Text,     '@number.janet_simple',
-  l.Blue,     '@boolean.janet_simple',
-  l.Green,    '@string.janet_simple',
-
-  l.Red,      'RainbowDelimiterRed',
-  l.Blue,     'RainbowDelimiterBlue',
-  l.Cyan,     'RainbowDelimiterGreen',
-  l.Purple,   'RainbowDelimiterPurple',
-
-  l.Text,     '@constructor.ocaml',
-              '@type.ocaml',
-              '@type.builtin.ocaml',
-  l.Blue,     '@keyword.type.ocaml',
-  l.Blue,     '@keyword.modifier.ocaml',
-  l.Text,     '@module.ocaml',
-  l.Orange,   '@number.ocaml',
-  l.Text,     '@function.call.ocaml',
-  l.Text,     '@function.ocaml',
-  l.Text,     '@punctuation.bracket.ocaml',
-              '@label.ocaml',
-              '@operator.ocaml',
-              '@punctuation.delimiter.ocaml',
+  l.Blue,     'adaKeyword',
+              'adaBegin',
+              'adaEnd',
+              'adaRepeat',
+  l.Orange,   'adaNumber',
+  l.Red,      'adaInc',
 }
 
 for _, group in ipairs(ih) do
@@ -151,3 +135,15 @@ end
 
 return hi
 
+
+-- l.Text,     'JanetSpecialForm',
+--             'JanetFunction',
+--             'JanetMacro',
+--             'JanetNumber',
+--             'JanetBoolean',
+--             '@function.macro.janet_simple',
+--             '@function.builtin.janet_simple',
+--             '@function.call.janet_simple',
+-- l.Text,     '@number.janet_simple',
+-- l.Blue,     '@boolean.janet_simple',
+-- l.Green,    '@string.janet_simple',
