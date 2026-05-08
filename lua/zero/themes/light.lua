@@ -1,34 +1,3 @@
--- local fg = {
---   black   =   '#1f1f1f',
---   blue    =   '#1354b0',
---   red     =   '#942b27',
---   purple  =   '#6c2f9e',
---   green   =   '#1a6b2a',
---
---   orange  =   '#9a6a01',
---   cyan    =   '#00797b',
---   brown   =   '#7d3b13',
---   gray    = { '#959595',
---               '#dddfdf',
---               '#5b5b60',
---               '#474747', }
--- }
---
--- local fg = {
---   black   =   '#040404',
---   blue    =   '#032e90',
---   purple  =   '#6e1e8e',
---   red     =   '#7f1f1f',
---   orange  =   '#9a6a01',
---   green   =   '#015602',
---   cyan    =   '#065f6e',
---   brown   =   '#7d3b13',
---   gray    = { '#959595',
---               '#dddfdf',
---               '#5b5b60',
---               '#474747', }
--- }
-
 local bg = {
   white   =   '#faf9f8',
   gray    =   '#edefef',
@@ -125,6 +94,8 @@ local ih = {
               'adaBegin',
               'adaEnd',
               'adaRepeat',
+              'adaStructure',
+              'adaTypeDef',
   l.Orange,   'adaNumber',
   l.Red,      'adaInc',
 }
