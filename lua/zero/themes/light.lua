@@ -9,9 +9,9 @@ local fg = {
   blue    =   '#032e90',
   purple  =   '#6e1e8e',
   red     =   '#771717',
-  orange  =   '#8f6102',
+  orange  =   '#916101',
   green   =   '#015602',
-  cyan    =   '#065f6e',
+  cyan    =   '#066e6e',
   brown   =   '#7d3b13',
   gray    = { '#959595',
               '#dddfdf',
@@ -86,16 +86,20 @@ local ih = {
               'Float',
   l.Purple,   'Boolean',
 
+  -- GO
   l.Text,     '@number.go',
               '@number.float.go',
   l.Red,      '@type.go',
 
+  -- ADA
   l.Blue,     'adaKeyword',
               'adaBegin',
               'adaEnd',
               'adaRepeat',
               'adaStructure',
               'adaTypeDef',
+              'adaStorageClass',
+              'adaOperator',
   l.Orange,   'adaNumber',
   l.Red,      'adaInc',
 }
