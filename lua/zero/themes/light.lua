@@ -8,7 +8,7 @@ local fg = {
   black   =   '#161616',
   blue    =   '#032e90',
   purple  =   '#6e1e8e',
-  red     =   '#821818',
+  red     =   '#7f1717',
   orange  =   '#916101',
   green   =   '#015602',
   cyan    =   '#066e6e',
@@ -87,9 +87,10 @@ local ih = {
   l.Purple,   'Boolean',
 
   -- GO
-  l.Text,     '@number.go',
+  l.Red,      '@number.go',
               '@number.float.go',
-  l.Red,      '@type.go',
+  l.Green,    '@type.go',
+  l.YellowB,  '@string.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
