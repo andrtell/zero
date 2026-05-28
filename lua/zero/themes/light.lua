@@ -7,9 +7,9 @@ local bg = {
 local fg = {
   black   =   '#161616',
   blue    =   '#032e90',
-  purple  =   '#6e1e8e',
+  purple  =   '#74158e',
   red     =   '#7f1717',
-  orange  =   '#916101',
+  orange  =   '#926601',
   green   =   '#015602',
   cyan    =   '#066e6e',
   brown   =   '#7d3b13',
@@ -87,10 +87,11 @@ local ih = {
   l.Purple,   'Boolean',
 
   -- GO
-  l.Red,      '@number.go',
+  l.Orange,   '@number.go',
               '@number.float.go',
   l.Green,    '@type.go',
-  l.YellowB,  '@string.go',
+  l.Red,      '@string.go',
+  l.Purple,   '@function.builtin.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
@@ -103,6 +104,9 @@ local ih = {
               'adaOperator',
   l.Orange,   'adaNumber',
   l.Red,      'adaInc',
+
+  -- Elixir
+  l.Orange,   '@string.special.symbol.elixir',
 }
 
 for _, group in ipairs(ih) do
