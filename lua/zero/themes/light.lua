@@ -5,13 +5,13 @@ local bg = {
 }
 
 local fg = {
-  black   =   '#161616',
+  black   =   '#111111',
   blue    =   '#032e90',
   purple  =   '#77168e',
   red     =   '#811919',
   orange  =   '#9a6108',
   green   =   '#015702',
-  cyan    =   '#066e6e',
+  cyan    =   '#006861',
   brown   =   '#7d3b13',
   gray    = { '#959595',
               '#dddfdf',
@@ -86,12 +86,19 @@ local ih = {
               'Float',
   l.Purple,   'Boolean',
 
+  -- C
+  l.Orange,   '@number.c',
+  l.Red,      '@string.c',
+              '@character.c',
+  l.Cyan,     '@keyword.return.c',
+  l.Green,    '@type.builtin.c',
+
   -- GO
   l.Orange,   '@number.go',
               '@number.float.go',
   l.Green,    '@type.go',
   l.Red,      '@string.go',
-  l.Purple,   '@function.builtin.go',
+  l.Text,     '@function.builtin.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
