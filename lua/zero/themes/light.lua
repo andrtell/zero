@@ -132,6 +132,14 @@ local ih = {
   l.Green,   '@type.typescript',
   l.Orange,  '@number.typescript',
   l.Red,     '@string.typescript',
+
+  -- CS
+  l.Green,   'csType',
+  l.Red,     'csString',
+  l.Blue,    'csModifier',
+             'csAccessModifier',
+  l.Orange,  'csInteger',
+             'csReal',
 }
 
 for _, group in ipairs(ih) do
