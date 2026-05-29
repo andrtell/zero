@@ -102,7 +102,7 @@ local ih = {
   l.Text,     '@function.call.go',
   l.Purple,   '@function.builtin.go',
   l.Blue,     '@function.method.call.go',
-  l.Orange,   '@keyword.go',
+  l.Bold,     '@keyword.go',
               '@keyword.return.go',
               '@keyword.function.go',
               '@keyword.import.go',
