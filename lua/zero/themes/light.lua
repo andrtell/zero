@@ -7,7 +7,7 @@ local bg = {
 local fg = {
   black   =   '#111111',
   blue    =   '#032e90',
-  purple  =   '#77168e',
+  purple  =   '#700e87',
   red     =   '#811919',
   orange  =   '#9a6108',
   green   =   '#015702',
@@ -35,6 +35,7 @@ local hi = {
   { fg = fg.orange  },    'Orange',
   { bg = bg.gray    },    'GrayB',
   { bg = bg.yellow  },    'YellowB',
+  { bold = true },        'Bold',
 }
 
 local l = {}
@@ -98,7 +99,17 @@ local ih = {
               '@number.float.go',
   l.Green,    '@type.go',
   l.Red,      '@string.go',
-  l.Text,     '@function.builtin.go',
+  l.Text,     '@function.call.go',
+  l.Purple,   '@function.builtin.go',
+  l.Text,     '@function.method.call.go',
+  l.Blue,     '@keyword.go',
+              '@keyword.return.go',
+              '@keyword.function.go',
+              '@keyword.import.go',
+              '@keyword.repeat.go',
+              '@keyword.conditional.go',
+  l.Text,     '@function.go',
+  l.Text,     '@variable.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
@@ -116,6 +127,11 @@ local ih = {
   l.Green,   '@string.special.symbol.elixir',
   l.Red,     '@string.elixir',
   l.Orange,  '@number.elixir',
+
+  -- TS
+  l.Green,   '@type.typescript',
+  l.Orange,  '@number.typescript',
+  l.Red,     '@string.typescript',
 }
 
 for _, group in ipairs(ih) do
