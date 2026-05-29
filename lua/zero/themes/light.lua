@@ -10,7 +10,7 @@ local bg = {
 
 local fg = {
   black   =   '#101010',
-  blue    =   '#032b8f',
+  blue    =   '#032a8f',
   purple  =   '#6f0d84',
   red     =   '#801718',
   orange  =   '#8a4a02',
@@ -121,6 +121,8 @@ local ih = {
   l.Text,     '@variable.go',
   l.Text,     '@punctuation.bracket.go',
   l.Text,     '@punctuation.delimiter.go',
+  l.Blue,     '@constant.builtin.go',
+  l.Orange,   '@string.escape.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
