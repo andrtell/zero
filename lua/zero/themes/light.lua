@@ -113,7 +113,9 @@ local ih = {
   l.Red,      'adaInc',
 
   -- Elixir
-  l.Orange,   '@string.special.symbol.elixir',
+  l.Green,   '@string.special.symbol.elixir',
+  l.Red,     '@string.elixir',
+  l.Orange,  '@number.elixir',
 }
 
 for _, group in ipairs(ih) do
