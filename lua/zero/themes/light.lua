@@ -101,8 +101,8 @@ local ih = {
   l.Red,      '@string.go',
   l.Text,     '@function.call.go',
   l.Purple,   '@function.builtin.go',
-  l.Text,     '@function.method.call.go',
-  l.Blue,     '@keyword.go',
+  l.Blue,     '@function.method.call.go',
+  l.Orange,   '@keyword.go',
               '@keyword.return.go',
               '@keyword.function.go',
               '@keyword.import.go',
@@ -138,6 +138,7 @@ local ih = {
   l.Red,     'csString',
   l.Blue,    'csModifier',
              'csAccessModifier',
+             'csClass',
   l.Orange,  'csInteger',
              'csReal',
 }
