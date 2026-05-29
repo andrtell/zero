@@ -13,8 +13,8 @@ local fg = {
   blue    =   '#032b8f',
   purple  =   '#6f0d84',
   red     =   '#811516',
-  orange  =   '#985f06',
-  green   =   '#015701',
+  orange  =   '#8a4c00',
+  green   =   '#005500',
   cyan    =   '#0e645f',
   brown   =   '#7d3b13',
   gray    = { '#959595',
@@ -119,6 +119,8 @@ local ih = {
               '@keyword.conditional.go',
   l.Text,     '@function.go',
   l.Text,     '@variable.go',
+  l.Orange,   '@punctuation.bracket.go',
+              '@punctuation.delimiter.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
