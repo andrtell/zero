@@ -103,7 +103,7 @@ local ih = {
   l.Green,    '@type.builtin.c',
 
   -- GO
-  l.Red,      '@number.go',
+  l.Blue,     '@number.go',
               '@number.float.go',
   l.Green,    '@type.go',
   l.Red,      '@string.go',
