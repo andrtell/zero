@@ -13,7 +13,7 @@ local fg = {
   blue    =   '#032b8f',
   purple  =   '#6f0d84',
   red     =   '#811516',
-  orange  =   '#8a4c00',
+  orange  =   '#8a4a02',
   green   =   '#005500',
   cyan    =   '#0e645f',
   brown   =   '#7d3b13',
@@ -103,12 +103,12 @@ local ih = {
   l.Green,    '@type.builtin.c',
 
   -- GO
-  l.Red,   '@number.go',
+  l.Red,      '@number.go',
               '@number.float.go',
-  l.Text,    '@type.go',
-  l.Green,      '@string.go',
+  l.Text,     '@type.go',
+  l.Green,    '@string.go',
   l.Text,     '@function.call.go',
-  l.Cyan,     '@function.builtin.go',
+  l.Orange,   '@function.builtin.go',
   l.Text,     '@function.method.call.go',
   l.Text,     '@function.call.go',
   l.Blue,     '@keyword.go',
@@ -119,8 +119,8 @@ local ih = {
               '@keyword.conditional.go',
   l.Text,     '@function.go',
   l.Text,     '@variable.go',
-  l.Orange,   '@punctuation.bracket.go',
-              '@punctuation.delimiter.go',
+  l.Text,     '@punctuation.bracket.go',
+  l.Text,     '@punctuation.delimiter.go',
 
   -- ADA
   l.Blue,     'adaKeyword',
