@@ -160,6 +160,7 @@ local ih = {
   l.Red,     '@string.unison',
              '@number.unison',
   l.Blue,    '@attribute.unison',
+  l.Text,    '@keyword.directive.unison',
 }
 
 for _, group in ipairs(ih) do
