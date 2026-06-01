@@ -154,13 +154,19 @@ local ih = {
              'csClass',
   l.Orange,  'csInteger',
              'csReal',
+
+  -- Unison
+  l.Green,   '@type.unison',
+  l.Red,     '@string.unison',
+             '@number.unison',
+  l.Blue,    '@attribute.unison',
 }
 
 for _, group in ipairs(ih) do
   table.insert(hi, group)
 end
 
-return hi
+return hi,
 
 
 -- l.Text,     'JanetSpecialForm',
