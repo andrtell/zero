@@ -166,17 +166,4 @@ for _, group in ipairs(ih) do
   table.insert(hi, group)
 end
 
-return hi,
-
-
--- l.Text,     'JanetSpecialForm',
---             'JanetFunction',
---             'JanetMacro',
---             'JanetNumber',
---             'JanetBoolean',
---             '@function.macro.janet_simple',
---             '@function.builtin.janet_simple',
---             '@function.call.janet_simple',
--- l.Text,     '@number.janet_simple',
--- l.Blue,     '@boolean.janet_simple',
--- l.Green,    '@string.janet_simple',
+return hi
