@@ -13,7 +13,7 @@ local fg = {
   blue    =   '#032a8f',
   purple  =   '#71127c',
   red     =   '#7f1719',
-  orange  =   '#994e05',
+  orange  =   '#935105',
   green   =   '#025203',
   cyan    =   '#0e645f',
   brown   =   '#7d3b13',
@@ -105,7 +105,8 @@ local ih = {
   -- GO
   l.Red,      '@number.go',
               '@number.float.go',
-  l.Purple,   '@type.go',
+              '@lsp.type.number.go',
+  l.Orange,   '@type.go',
   l.Red,      '@string.go',
   l.Text,     '@function.call.go',
   l.Text,     '@function.builtin.go',
