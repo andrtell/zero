@@ -106,7 +106,7 @@ local ih = {
   l.Red,      '@number.go',
               '@number.float.go',
               '@lsp.type.number.go',
-  l.Orange,   '@type.go',
+  l.Purple,   '@type.go',
   l.Red,      '@string.go',
   l.Text,     '@function.call.go',
   l.Text,     '@function.builtin.go',
