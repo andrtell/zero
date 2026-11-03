@@ -160,6 +160,7 @@ local ih = {
   l.Mojo_Blue,  'mojoFunction',
   l.Mojo_Orange,'mojoType',
   l.Text,       'mojoBuiltin',
+  l.Mojo_Purple,'mojoDecoratorName',
 }
 
 for _, group in ipairs(ih) do
