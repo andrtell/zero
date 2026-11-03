@@ -10,7 +10,7 @@ local bg = {
 
 local fg = {
   black   =   '#101010',
-  blue    =   '#02278c',
+  blue    =   '#02268d',
   purple  =   '#73127b',
   red     =   '#7f1c1b',
   orange  =   '#8d5f06',
@@ -47,7 +47,7 @@ local hi = {
   { bg = bg.pink },       'PinkB',
   { bg = bg.gr },         'GrB',
   { bg = bg.white, fg = bg.white }, 'Inv',
-  { fg = fg.red,    bold = true },  'Mojo_Red',
+  { fg = fg.red,    bold = false },  'Mojo_Red',
   { fg = fg.blue,   bold = false }, 'Mojo_Blue',
   { fg = fg.orange, bold = false },  'Mojo_Orange',
   { fg = fg.green,  bold = false }, 'Mojo_Green',
