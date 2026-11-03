@@ -12,9 +12,9 @@ local fg = {
   black   =   '#111111',
   blue    =   '#03288e',
   purple  =   '#73107b',
-  red     =   '#7d1919',
-  orange  =   '#914c02',
-  green   =   '#035203',
+  red     =   '#7d1b1b',
+  orange  =   '#914f04',
+  green   =   '#055401',
   cyan    =   '#0e645f',
   brown   =   '#7d3b13',
   gray    = { '#959595',
@@ -47,6 +47,10 @@ local hi = {
   { bg = bg.pink },       'PinkB',
   { bg = bg.gr },         'GrB',
   { bg = bg.white, fg = bg.white }, 'Inv',
+  { fg = fg.red,    bold = true }, 'Mojo_Red',
+  { fg = fg.blue,   bold = false },  'Mojo_Blue',
+  { fg = fg.orange, bold = true },  'Mojo_Orange',
+  { fg = fg.green,  bold = false },'Mojo_Green',
 }
 
 local l = {}
@@ -143,14 +147,15 @@ local ih = {
              'csReal',
 
   -- Mojo
-  l.Green,   'mojoString',
-  l.Blue,     'mojoStatement',
-             'mojoOperator',
-             'mojoRepeat',
-             'mojoConditional',
-  l.Red,     'mojoNumber',
-  l.Orange,  'mojoType',
-  l.Text,    'mojoBuiltin',
+  l.Mojo_Green, 'mojoString',
+  l.Mojo_Red,  'mojoStatement',
+                'mojoOperator',
+                'mojoRepeat',
+                'mojoConditional',
+                'mojoException',
+  l.Mojo_Blue,   'mojoNumber',
+  l.Mojo_Orange,'mojoType',
+  l.Text,       'mojoBuiltin',
 }
 
 for _, group in ipairs(ih) do
