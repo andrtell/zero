@@ -1,5 +1,5 @@
 local bg = {
-  white   =   '#fafafa',
+  white   =   '#f9f9f9',
   gray    =   '#edefef',
   yellow  =   '#eeeed8',
   pink    =   '#f3e6f3',
@@ -10,11 +10,11 @@ local bg = {
 
 local fg = {
   black   =   '#101010',
-  blue    =   '#032a8f',
-  purple  =   '#71127c',
+  blue    =   '#03298d',
+  purple  =   '#72117b',
   red     =   '#7e1a1a',
   orange  =   '#935105',
-  green   =   '#025203',
+  green   =   '#025102',
   cyan    =   '#0e645f',
   brown   =   '#7d3b13',
   gray    = { '#959595',
@@ -125,24 +125,7 @@ local ih = {
   l.Blue,     '@constant.builtin.go',
   l.Orange,   '@string.escape.go',
 
-  -- ADA
-  l.Blue,     'adaKeyword',
-              'adaBegin',
-              'adaEnd',
-              'adaRepeat',
-              'adaStructure',
-              'adaTypeDef',
-              'adaStorageClass',
-              'adaOperator',
-  l.Orange,   'adaNumber',
-  l.Red,      'adaInc',
-
-  -- Elixir
-  l.Green,   '@string.special.symbol.elixir',
-  l.Red,     '@string.elixir',
-  l.Orange,  '@number.elixir',
-
-  -- TS
+  -- Typescript
   l.Green,   '@type.typescript',
   l.Orange,  '@number.typescript',
   l.Red,     '@string.typescript',
@@ -156,12 +139,12 @@ local ih = {
   l.Orange,  'csInteger',
              'csReal',
 
-  -- Unison
-  l.Green,   '@type.unison',
-  l.Red,     '@string.unison',
-             '@number.unison',
-  l.Blue,    '@attribute.unison',
-  l.Text,    '@keyword.directive.unison',
+  -- Mojo
+  l.Green,   'mojoString',
+  l.Blue,    'mojoStatement',
+             'mojoOperator',
+  l.Red,     'mojoNumber',
+  l.Purple,  'mojoType',
 }
 
 for _, group in ipairs(ih) do
