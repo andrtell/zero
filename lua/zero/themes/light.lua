@@ -51,7 +51,7 @@ local hi = {
   { fg = fg.blue,   bold = false }, 'Mojo_Blue',
   { fg = fg.orange, bold = true },  'Mojo_Orange',
   { fg = fg.green,  bold = false }, 'Mojo_Green',
-  { fg = fg.purple,  bold = true }, 'Mojo_Purple',
+  { fg = fg.purple,  bold = false }, 'Mojo_Purple',
   { bold = true },                  'Mojo_Bold',
 }
 
@@ -151,12 +151,13 @@ local ih = {
   -- Mojo
   l.Mojo_Green, 'mojoString',
   l.Mojo_Red,   'mojoStatement',
+                'mojoInclude',
                 'mojoOperator',
                 'mojoRepeat',
                 'mojoConditional',
                 'mojoException',
   l.Mojo_Blue,  'mojoNumber',
-  l.Mojo_Bold,  'mojoFunction',
+  l.Text,       'mojoFunction',
   l.Mojo_Orange,'mojoType',
   l.Text,       'mojoBuiltin',
 }
