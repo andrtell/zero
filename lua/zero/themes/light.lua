@@ -10,7 +10,7 @@ local bg = {
 
 local fg = {
   black   =   '#101010',
-  blue    =   '#02288d',
+  blue    =   '#02278c',
   purple  =   '#73127b',
   red     =   '#7f1c1b',
   orange  =   '#8d5f06',
@@ -157,7 +157,7 @@ local ih = {
                 'mojoConditional',
                 'mojoException',
   l.Mojo_Blue,  'mojoNumber',
-  l.Text,       'mojoFunction',
+  l.Mojo_Blue,  'mojoFunction',
   l.Mojo_Orange,'mojoType',
   l.Text,       'mojoBuiltin',
 }
