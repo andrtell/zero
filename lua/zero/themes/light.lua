@@ -49,7 +49,7 @@ local hi = {
   { bg = bg.white, fg = bg.white }, 'Inv',
   { fg = fg.red,    bold = true },  'Mojo_Red',
   { fg = fg.blue,   bold = false }, 'Mojo_Blue',
-  { fg = fg.orange, bold = true },  'Mojo_Orange',
+  { fg = fg.orange, bold = false },  'Mojo_Orange',
   { fg = fg.green,  bold = false }, 'Mojo_Green',
   { fg = fg.purple,  bold = false }, 'Mojo_Purple',
   { bold = true },                  'Mojo_Bold',
