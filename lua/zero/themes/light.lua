@@ -1,5 +1,5 @@
 local bg = {
-  white   =   '#f9f9f9',
+  white   =   '#f8f8f8',
   gray    =   '#edefef',
   yellow  =   '#eeeed8',
   pink    =   '#f3e6f3',
@@ -9,18 +9,19 @@ local bg = {
 }
 
 local fg = {
-  black   =   '#101010',
-  blue    =   '#03298d',
-  purple  =   '#72117b',
+  black   =   '#111111',
+  blue    =   '#03288e',
+  purple  =   '#73107b',
   red     =   '#7d1919',
-  orange  =   '#935105',
-  green   =   '#025102',
+  orange  =   '#914c02',
+  green   =   '#035203',
   cyan    =   '#0e645f',
   brown   =   '#7d3b13',
   gray    = { '#959595',
               '#dddfdf',
               '#5b5b60',
-              '#474747', }
+              '#474747',
+              '#575757', }
 }
 
 local hi = {
@@ -30,6 +31,7 @@ local hi = {
   { fg = fg.gray[2] },    'Gray2',
   { fg = fg.gray[3] },    'Gray3',
   { fg = fg.gray[4] },    'Gray4',
+  { fg = fg.gray[5] },    'Gray5',
   { fg = fg.red     },    'Red',
   { fg = fg.green   },    'Green',
   { fg = fg.blue    },    'Blue',
@@ -44,6 +46,7 @@ local hi = {
   { bg = bg.cyan },       'CyanB',
   { bg = bg.pink },       'PinkB',
   { bg = bg.gr },         'GrB',
+  { bg = bg.white, fg = bg.white }, 'Inv',
 }
 
 local l = {}
@@ -57,7 +60,7 @@ end
 local ih = {
   l.Text,     'Normal',
               'Delimiter',
-  l.Gray1,    'NonText',
+  l.Inv,    'NonText',
   l.Gray2,    'WinSeparator',
   l.GrayB,    'Visual',
               'StatusLine',
@@ -141,10 +144,13 @@ local ih = {
 
   -- Mojo
   l.Green,   'mojoString',
-  l.Blue,    'mojoStatement',
+  l.Blue,     'mojoStatement',
              'mojoOperator',
+             'mojoRepeat',
+             'mojoConditional',
   l.Red,     'mojoNumber',
-  l.Purple,  'mojoType',
+  l.Orange,  'mojoType',
+  l.Text,    'mojoBuiltin',
 }
 
 for _, group in ipairs(ih) do
