@@ -155,6 +155,7 @@ local ih = {
                 'mojoConditional',
                 'mojoException',
   l.Mojo_Blue,  'mojoNumber',
+                'mojoFunction',
   l.Mojo_Orange,'mojoType',
   l.Text,       'mojoBuiltin',
 }
